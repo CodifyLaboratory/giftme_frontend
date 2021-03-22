@@ -1,0 +1,50 @@
+.menu, .ikon {
+    display: flex;
+    
+}
+.header {
+    display: flex;
+    background: #1DB3C3;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 130px;
+    padding-right: 140px;
+
+}
+
+.logo {
+    width: 116px;
+    left: 130px;
+    height: 29px;
+    top: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu>nav {
+    margin:0 20px;
+}
+.present>img {
+    height: 31.5px;
+    width: 31.5px;
+    padding: 13.5px 15px;
+}
+.ikon>:nth-child(1) {
+    width: 31.5px;
+    margin: 25px;
+}
+
+.present {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #F2C94C;
+    margin: 10px 0 0 53.5px;
+
+}
+.menu {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}

@@ -1,11 +1,14 @@
-import Header from './pages/header/header'
+import Header from './Components/Header/header';
+import AboutMe from './Pages/AboutMe/AboutMe';
+import Personal from './Pages/PersonalArea/Personal';
+import HeaderMain from './Pages/header/header'
 import './App.css'
-import MainPage from './pages/header/main/main'
-import Footer from './pages/footer/footer'
-import MyFriend from './pages/myFriends/myFriends'
-import Sidebar from './components/sidebar/sidebar'
-import Wishlist from './pages/Wishlist/wishlist'
-import WishlistSidebar from './components/wishlistSidebar/wishlistSidebar'
+import MainPage from './Pages/header/main/main'
+import Footer from './Pages/footer/footer'
+import MyFriend from './Pages/myFriends/myFriends'
+import Sidebar from './Components/sidebar/sidebar'
+import Wishlist from './Pages/Wishlist/wishlist'
+import WishlistSidebar from './Components/wishlistSidebar/wishlistSidebar'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
@@ -15,16 +18,26 @@ function App() {
 
     <Router>
       <div className="App">
-        <Header />
 
         <Switch>
 
           <Route exact path="/">
-            <MainPage />
+            <HeaderMain />
+            <MainPage /> 
           </Route>
+          <Route exact path="/AboutMe">
+        <Header />
 
+            <AboutMe />
+          </Route>
+          <Route exact path="/Personal">
+        <Header />
+            <Personal />
+
+          </Route>
           <div className='container'>
             <Route exact path="/MyFriend">
+              <Header />
               <Sidebar />
               <MyFriend />
             </Route>

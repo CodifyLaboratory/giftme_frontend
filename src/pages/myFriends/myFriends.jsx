@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './myFriends.css'
 import search from './../../img/search.png'
-import FriendsInfo from './../../components/friendsInfo/friendsInfo'
+import FriendsInfo from './../../Components/friendsInfo/friendsInfo'
 
 const MyFriend = () => {
     return (

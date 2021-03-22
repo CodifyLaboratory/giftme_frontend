@@ -1,0 +1,27 @@
+.footer {
+    background: rgba(0, 0, 0, 0.85);
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    
+}
+
+.footer-content {
+    margin-top: 30px;
+    
+}
+
+.footer-content>a{
+  margin: 10px;
+  display: block;
+}
+
+.footer-content2 {
+    margin-top: 30px;
+}
+
+.footer-content2>img {
+    margin: 10px;
+}

@@ -1,0 +1,9 @@
+.input-wish{
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(26, 26, 26, 0.6);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 10px;
+
+    }

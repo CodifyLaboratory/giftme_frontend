@@ -1,0 +1,46 @@
+.friends {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    width: 40%;
+    margin: 20px ;
+    
+}
+
+.friends>input {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.friends>p {
+    margin-left: 20px ;
+}
+.friends>div{
+    margin-left: 20px;
+}
+.friends>div>span {
+    width: 5px;
+    height: 5px;
+    background: grey;
+    position: absolute;   
+}
+
+.friends>div>span:first-child{
+margin-left: 20px;
+}
+
+.friends>div>span:last-child{
+    margin-left: 40px;
+}
+
+.spans {
+    position: absolute;
+    left: 350px;
+    
+}
+
+.spans>span {
+  border-radius: 50%;
+}
+

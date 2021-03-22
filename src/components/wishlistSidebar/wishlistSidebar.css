@@ -1,0 +1,27 @@
+.Wishlistside-bar{
+    background-color: #EAE8FF;
+    height: 1000px;
+    width: 250px;
+    color: #6860BC;
+}
+
+.Wishlistside-bar-content{
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.share{
+    background: #877CFF;
+    border-radius: 20px;
+    width: 232px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #FEF8F8;
+
+}

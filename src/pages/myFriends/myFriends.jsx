@@ -8,8 +8,8 @@ const MyFriend = () => {
         <div>
             <div className='search'>
                 <label>
-                <input className='input-search' type="search" ></input>
-                <img className='search-img' src={search} alt="search" />
+                    <input className='input-search' type="search" ></input>
+                    <img className='search-img' src={search} alt="search" />
                 </label>
             </div>
 
@@ -30,7 +30,7 @@ const MyFriend = () => {
 
             <div className='more'>Показать еще...</div>
 
-            
+
 
         </div>
 

@@ -1,6 +1,5 @@
 .menu, .ikon {
     display: flex;
-    
 }
 .header {
     display: flex;
@@ -10,14 +9,13 @@
     align-items: center;
     padding-left: 130px;
     padding-right: 140px;
-
 }
 
 .logo {
     width: 116px;
     left: 130px;
     height: 29px;
-    top: 26px;
+    margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 .menu>nav {

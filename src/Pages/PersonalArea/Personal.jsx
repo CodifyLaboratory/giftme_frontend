@@ -3,7 +3,7 @@ import Css from '../PersonalArea/Personal.module.css'
 import Area from '../../Images/area.png'
 import Friends from '../../Images/friends.png'
 import Holidays from '../../Images/holidays.png'
-import Wishes from '../../Images/wishes.png'
+import Gifts from '../../Images/gifts.png'
 import Ellips from '../../Images/ellips.png'
 import Edit from '../../Images/edit.png'
 
@@ -14,31 +14,31 @@ function Personal() {
             <div className={Css.container}>
                 <div className={Css.sideBar}>
                     <div className={Css.area}>
-                        <img src={Area} alt="" />
+                        <img src={Area} alt="Area" />
                         <div>Личный кабинет</div>
                     </div>
-                    <div className={Css.friends}>
-                        <img src={Friends} alt="" />
+                    <div className={Css.area}>
+                        <img src={Friends} alt="Friends" />
                         <div>Мои друзья</div>
                     </div>
-                    <div className={Css.holidays}>
-                        <img src={Holidays} alt="" />
+                    <div className={Css.area}>
+                        <img src={Holidays} alt="Holidays" />
                         <div>Мои праздники</div>
                     </div>
-                    <div className={Css.wishes}>
-                        <img src={Wishes} alt="" />
+                    <div className={Css.area}>
+                        <img src={Gifts} alt="Gifts" />
                         <div>Мой список желаний</div>
                     </div>
                     <button>Поделиться</button>
                 </div>
-                <div>
+                <div className={Css.content}>
                     <div className={Css.user}>
-                        <img src={Ellips} alt="" />
-                        <div>Alymov Adilet</div>
-                        <div>alymovadilet1996@gmail.com</div>
+                        <img src={Ellips} alt="Ellips" />
+                        <div className={Css.name}>Kurmanova Aigerim</div>
+                        <div className={Css.email}>Kurmanova21@mail.ru</div>
                     </div>
                     <div className={Css.edit}>
-                        <img src={Edit} alt="" />
+                        <img src={Edit} alt="Edit" />
                         <div>Редактировать профиль</div>
                     </div>
                     <div className={Css.counter}>
@@ -55,10 +55,12 @@ function Personal() {
                             <div>Подарено</div>
                         </div>
                     </div>
-                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quibusdam, assumenda libero enim atque facilis quia porro eius reprehenderit deleniti,
-                    earum molestias ab?
-                         Laudantium in rem, earum quisquam voluptatum praesentium quam.</div>
+                    <div className={Css.info}>
+                        <div>Художник, юрист, артист</div>
+                        <div>24 года</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem expedita perferendis ducimus? 
+                            Eligendi totam, suscipit nihil excepturi repellat velit aperiam debitis aut laborum repellendus natus libero, deleniti quas eaque?</div>
+                    </div>
                 </div>
             </div>
         </div>

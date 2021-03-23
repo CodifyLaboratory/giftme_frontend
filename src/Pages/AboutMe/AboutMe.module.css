@@ -75,11 +75,11 @@ span {
     margin-top: 3px;
 } 
 
-div {
+.label>div {
     margin-bottom: 7px;
 }
 
-input {
+.label>input {
     width: 100%;
     height: 50px;
     border: 1px solid #F0F0F0;

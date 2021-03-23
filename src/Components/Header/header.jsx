@@ -12,7 +12,6 @@ function Header() {
             <div className='header'>
                 <div className="logo">
                     <img src={Logo} alt="GiftMe" />
-
                 </div>
                 <div className='menu'>
                     <nav>О нас</nav>
@@ -25,7 +24,6 @@ function Header() {
                     <div className="present">
                         <img src={Present} alt="Gift" />
                     </div>
-
                 </div>
             </div>
         </header>

@@ -10,6 +10,7 @@ import Sidebar from './Components/sidebar/sidebar'
 import Wishlist from './Pages/Wishlist/wishlist'
 import WishlistSidebar from './Components/wishlistSidebar/wishlistSidebar'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
 
 
 
@@ -24,34 +25,45 @@ function App() {
           <Route exact path="/">
             <HeaderMain />
             <MainPage />
+            <Footer />
+
           </Route>
 
           <Route exact path="/AboutMe">
             <Header />
             <AboutMe />
+            <Footer />
+
           </Route>
 
           <Route exact path="/Personal">
             <Header />
             <Personal />
-          </Route>
-          
-          <div className='container'>
-            <Route exact path="/MyFriend">
-              <Header />
-              <Sidebar />
-              <MyFriend />
-            </Route>
+            <Footer />
 
-            <Route exact path='/wishlist'>
-              <WishlistSidebar />
-              <Wishlist />
-            </Route>
-          </div>
+          </Route>
+
+          <Route exact path="/MyFriend">
+            <Header />
+            <Sidebar />
+            <MyFriend />
+            <Footer />
+          </Route>
+
+          <Route exact path='/wishlist'>
+            <WishlistSidebar />
+            <Wishlist />
+            <Footer />
+
+          </Route>
+
+          <Route exact path='/ErrorPage'>
+            <Header />
+            <ErrorPage />
+          </Route>
 
 
         </Switch>
-        <Footer />
       </div>
     </Router>
 

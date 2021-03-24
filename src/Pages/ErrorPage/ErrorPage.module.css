@@ -1,0 +1,52 @@
+.ErrorPage {
+    font-family: Montserrat, sans-serif;
+    color: #000000;
+    font-style: normal;
+    background: url(../../Images/Error.png) right bottom no-repeat;
+
+}
+.ErrorPage>div:nth-child(1) {
+    width: 176px;
+    height: 117px;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 117px;
+    margin: 194px 0 19px 113px;
+}
+
+.ErrorPage>div:nth-child(2) {
+    width: 267px;
+    height: 234px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    margin: 0 0 121px 112px;
+    text-transform: uppercase;
+}
+
+
+.ErrorPage>div:nth-child(3) {
+    width: 557px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background-image: none;
+    margin: 0 0 55px 70px;
+}
+
+.ErrorPage>button {
+    width: 232px;
+    height: 40px;
+    background: #877CFF;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FEF8F8;
+    border: none;
+    margin: 0 0 197px 70px;
+}
+
+
+

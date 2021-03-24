@@ -1,22 +1,23 @@
 import React from 'react';
-import '../header/header.css'
+import Css from '../header/header.module.css'
 import Logo from '../../img/logo.png'
-function Header () {
+
+function Header() {
     return (
         <header>
-            <div className='header'>
-                <div className="logo">
-                    <img src={Logo} alt="GiftMe"/>
+            <div className={Css.header}>
+                <div className={Css.logo}>
+                    <img src={Logo} alt="GiftMe" />
                 </div>
-                <div className='menu'>
-                    <nav className='nav1'>О нас</nav>
+                <div className={Css.menu}>
+                    <nav className={Css.nav1}>О нас</nav>
                     <nav>Миссия сайта</nav>
-                    <button className='nav2'>Регистрация</button>
+                    <button className={Css.nav2}>Регистрация</button>
                     <nav>Войти</nav>
                 </div>
-               
-                </div>
-              
+
+            </div>
+
         </header>
     )
 }

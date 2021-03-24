@@ -1,23 +1,23 @@
 import React from 'react'
-import css from './myFriends.css'
+import css from './myFriends.module.css'
 import search from './../../img/search.png'
 import FriendsInfo from './../../Components/friendsInfo/friendsInfo'
 
 const MyFriend = () => {
     return (
         <div>
-            <div className='search'>
+            <div className={css.search}>
                 <label>
-                    <input className='input-search' type="search" ></input>
-                    <img className='search-img' src={search} alt="search" />
+                    <input className={css.input_search} type="search" ></input>
+                    <img className={css.search_img} src={search} alt="search" />
                 </label>
             </div>
 
-            <div className='friends-title'>
+            <div className={css.friends_title}>
                 <h1>Мои Друзья</h1>
             </div>
 
-            <div className='Friends-info'>
+            <div className={css.Friends_info}>
                 <FriendsInfo />
                 <FriendsInfo />
                 <FriendsInfo />
@@ -28,7 +28,7 @@ const MyFriend = () => {
                 <FriendsInfo />
             </div>
 
-            <div className='more'>Показать еще...</div>
+            <div className={css.more}>Показать еще...</div>
 
 
 

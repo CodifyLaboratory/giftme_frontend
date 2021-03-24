@@ -88,7 +88,6 @@ function AboutMe() {
                     <input type="text" id="Instagram" />
                     <img src={Pencil} alt="Pencil" />
                 </label>
-
                 <br />
                 <div className={Style.btnSave}>
                     <button>Выйти</button>

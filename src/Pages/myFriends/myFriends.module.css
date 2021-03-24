@@ -1,4 +1,4 @@
-.input-search {
+.input_search {
     width: 50%;
     height: 60px;
     border: 2px solid #7BA7AB;
@@ -10,7 +10,7 @@
     padding-right: 30px;
 }
 
-.input-search:focus{
+.input_search:focus{
     outline: none;
 }
 
@@ -19,14 +19,14 @@
     
 }
 
-.search-img {
+.search_img {
     position: absolute;
     top: 50px;
     left: 280px;
 }
 
 
-.friends-title{
+.friends_title{
     margin-left: 40%;
 }
 
@@ -37,7 +37,7 @@ input {
     border-radius: 10px;
 }
 
-.Friends-info {
+.Friends_info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

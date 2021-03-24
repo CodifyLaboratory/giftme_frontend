@@ -15,6 +15,7 @@ const WishlistContent = () => {
             <a>https://giftwhale.com/</a>
             <br/>
             <br/>
+            <br/>
             <span>Дата</span>
         
            </div>

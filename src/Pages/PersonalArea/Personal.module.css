@@ -1,0 +1,146 @@
+.container, .edit, .counter {
+    display: flex;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 33px 0 0 30px;
+}
+
+.sideBar:nth-child(1) {
+    padding-top: 125px;
+}
+
+.sideBar {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #6860BC;
+    width: 320px;
+    height: 949px;
+    background: #EAE8FF;
+}
+
+.sideBar>button {
+    background: #877CFF;
+    border-radius: 20px;
+    width: 232px;
+    height: 40px;
+    margin: 62px 58px 0 30px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FEF8F8;
+    border: none;
+}
+
+.area>div {
+    padding-left: 20px;
+}
+
+.content {
+    width: 1120px;
+    height: 949px;
+}
+.user {
+    height: 353px;
+    background: #C4C4C4;
+}
+
+.user, .edit {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.user>img {
+    padding: 31px 0 8px 0;
+}
+.name, .email{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.name {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.email {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 56px;
+}
+
+.edit>div {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1A1A1A;
+    padding: 20px 0 20px 6.28px;
+}
+
+.counter>div {
+    width: 370px;
+    height: 155px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.counter>div>div:nth-child(1) {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+}
+.counter>div>div:nth-child(2) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.counter>div:nth-child(3) {
+    background: #D4C2FC;
+}
+.counter>div:nth-child(2) {
+    background: #1DB3C3;
+    margin: 0 5px 0 5px;
+}
+.counter>div:nth-child(1) {
+    background: #FFCA12;
+}
+
+.info {
+    margin: 44px 35px 95px 15px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.info>div {
+    padding:22px 0 22px 40px;
+    
+}

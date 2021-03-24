@@ -1,0 +1,260 @@
+.page {
+    margin-top: 103px;
+}
+form {
+    text-align: left;
+    width: 600px;
+    margin: 0 auto;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+}
+
+.btnSave {
+    margin-top: 57px;
+}
+
+.btnSave>:nth-child(1) {
+    border: 2px solid #FFCA12;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 188px;
+    height: 50px;
+}
+.btnSave>:nth-child(2) {
+    width: 188px;
+    height: 50px;
+    background: #FFCA12;
+    border-radius: 10px;
+}
+
+.btnSave, .date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date>select {
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 17px;
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    height: 50px;
+}
+
+.sct {
+    width: 162px;
+}
+
+.sct>option {
+    font-size: 15px;
+}
+body {
+    font-family: Monsterrat, sans-serif;
+}
+span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 53px;
+}
+
+.symbol {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 3px;
+} 
+
+.label>div {
+    margin-bottom: 7px;
+}
+
+.label>input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.aboutMe {
+    width: 600px;
+    height: 103px;
+    font-size: 17px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.about {
+    margin-top: 25px;
+}
+
+.btnBlock {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    margin: 119px auto;
+}
+
+.modal2, .modal {
+    width:350px;
+    height: 300px;
+    background: #F7F6FF;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.modal2>label>input {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 260px;
+    height: 30px;
+}
+
+.modal>label>input {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 260px;
+    height: 30px;
+}
+.modal>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal2>label>p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    text-align: left;
+    margin: 85px 0 6px 45px;
+}
+
+
+
+.modal2>label>div>:nth-child(1) {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #1DB3C3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.modal2>label>div>:nth-child(2) {
+    width: 108.7px;
+    height: 30px;
+    background: #1DB3C3;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 11px;
+}
+.modal>div>:nth-child(1) {
+    width: 100px;
+    height: 30px;
+    background: #1DB3C3;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: Montserrat, sans-serif;
+}
+
+.modal>div>:nth-child(2) {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #1DB3C3;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: Montserrat, sans-serif;
+}
+
+.modal>label>div {
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.modal>:nth-child(1)>div {
+    margin: 79px 0 6px 45px;
+}
+
+.modal>:nth-child(2)>div {
+    margin: 17px 0 6px 45px;
+}
+
+.modal>div {
+    margin: 20px 45px 0 45px;
+}
+
+
+
+.modal2>label>div {
+    margin: 40px 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.modal2>a>img {
+    position: absolute;
+    right: 37px;
+    top: 30px;
+}
+.modal>a>img {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+}
+
+
+.label>img {
+    position: absolute;
+    right: 10px;
+    top: 29px;
+}
+
+.year {
+    width: 162px;
+}
+.year {
+    display: flex;
+    position: relative;
+}
+.year>img {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.year>input {
+    font-family: Montserrat, sans-serif;
+    width: 162px;
+    font-size: 17px;
+}
+
+.year>input::placeholder {
+    color:#000000;
+  }
+
+

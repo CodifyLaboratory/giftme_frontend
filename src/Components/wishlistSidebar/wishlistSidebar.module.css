@@ -1,16 +1,16 @@
-.Wishlistside_bar{
+.Wishlistside_bar {
     background-color: #EAE8FF;
     height: 1000px;
     width: 250px;
     color: #6860BC;
 }
 
-.Wishlistside_bar_content{
+.Wishlistside_bar_content {
     margin-top: 100px;
     margin-left: 15px;
 }
 
-.share{
+.share {
     background: #877CFF;
     border-radius: 20px;
     width: 232px;
@@ -23,5 +23,4 @@
     margin-top: 30px;
     margin-left: 10px;
     color: #FEF8F8;
-
 }

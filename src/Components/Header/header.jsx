@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Header/header.css'
+import Css from '../Header/header.module.css'
 import Bell from '../../Images/Bell.png'
 import Present from '../../Images/Present.png'
 import Logo from '../../Images/Logo.png'
@@ -9,17 +9,17 @@ import Logo from '../../Images/Logo.png'
 function Header() {
     return (
         <header>
-            <div className='header'>
-                <div className="logo">
+            <div className={Css.header}>
+                <div className={Css.logo}>
                     <img src={Logo} alt="GiftMe" />
                 </div>
-                <div className='menu'>
+                <div className={Css.menu}>
                     <nav>О нас</nav>
                     <nav>Лента</nav>
                     <nav>Мой WishList</nav>
                     <nav>Мои Друзья</nav>
                 </div>
-                <div className='ikon'>
+                <div className={Css.ikon}>
                     <img src={Bell} alt="Bell" />
                     <div className="present">
                         <img src={Present} alt="Gift" />

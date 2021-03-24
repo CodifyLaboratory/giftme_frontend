@@ -8,20 +8,20 @@
     
 }
 
-.footer-content {
+.footer_content {
     margin-top: 30px;
     
 }
 
-.footer-content>a{
+.footer_content>a{
   margin: 10px;
   display: block;
 }
 
-.footer-content2 {
+.footer_content2 {
     margin-top: 30px;
 }
 
-.footer-content2>img {
+.footer_content2>img {
     margin: 10px;
 }

@@ -1,22 +1,22 @@
 import React from 'react'
-import css from './wishlist.css'
+import css from './wishlist.module.css'
 import WishlistContent from './../../Components/wishlistContent/wishlistContent'
 
 
 const Wishlist = () => {
     return (
-        <div className='Wishlist-content'>
+        <div className={css.Wishlist_content}>
             <div>
-            <h2 className='wishlist-title'>Список желаний</h2>
-            <WishlistContent/>
-            <WishlistContent/>
-            <WishlistContent/>
-            <WishlistContent/>
-            <WishlistContent/>
+                <h2 className={css.wishlist_title}>Список желаний</h2>
+                <WishlistContent />
+                <WishlistContent />
+                <WishlistContent />
+                <WishlistContent />
+                <WishlistContent />
             </div>
 
-            <a className='moreWish'>Показать еще...</a>
-            
+            <a className={css.moreWish}>Показать еще...</a>
+
         </div>
     )
 }

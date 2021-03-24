@@ -1,4 +1,4 @@
-.side-bar {
+.side_bar {
     background-color: #EAE8FF;
     height: 1000px;
     width: 600px;
@@ -6,7 +6,7 @@
     
 }
 
-.side-bar-content {
+.side_bar_content {
     margin-top: 100px;
     margin-left: 10px;
     

@@ -1,5 +1,5 @@
 import React from 'react'
-import css from './wishlistSidebar.css'
+import css from './wishlistSidebar.module.css'
 import home from './../../img/home.png'
 import friends from './../../img/friends.png'
 import holidays from './../../img/holidays.png'
@@ -8,33 +8,31 @@ import { Link } from 'react-router-dom'
 
 const WishlistSidebar = () => {
     return (
-        <div className='Wishlistside-bar'>
+        <div className={css.Wishlistside_bar}>
 
-            <div className='Wishlistside-bar-content'>
-                <div className='wrapper'>
+            <div className={css.Wishlistside_bar_content}>
+                <div className={css.wrapper}>
                     <img src={home} alt="home" />
-                    <Link className="link">Личный кабинет</Link>
+                    <Link className={css.link}>Личный кабинет</Link>
                 </div>
 
-                <div className='wrapper'>
+                <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
                     <Link className="link">Мои друзья</Link>
                 </div>
 
-                <div className='wrapper'>
+                <div className={css.wrapper}>
                     <img src={holidays} alt="holidays" />
-                    <Link className='link'>Мои праздники</Link>
+                    <Link className={css.link}>Мои праздники</Link>
                 </div>
 
-                <div className='wrapper'>
+                <div className={css.wrapper}>
                     <img src={gifts} alt="gifts" />
-                    <Link className='link'>Мой список желаний</Link>
+                    <Link className={css.link}>Мой список желаний</Link>
                 </div>
-                </div>
+            </div>
 
-                <button className='share'>Поделиться</button>
-
-            
+            <button className={css.share}>Поделиться</button>
         </div>
     )
 }

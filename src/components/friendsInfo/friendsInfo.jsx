@@ -1,13 +1,13 @@
 import React from 'react'
-import css from './friendsInfo.css'
+import css from './friendsInfo.module.css'
 import image from './../../img/image.png'
 
 const FriendsInfo = () => {
 
 return(
 
- <div className='friends'>
- <div className='spans'>
+ <div className={css.friends}>
+ <div className={css.spans}>
   <span></span>
   <span></span>
   <span></span>

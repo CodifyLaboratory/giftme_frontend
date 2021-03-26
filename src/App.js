@@ -11,6 +11,7 @@ import Wishlist from './Pages/Wishlist/wishlist'
 import WishlistSidebar from './Components/wishlistSidebar/wishlistSidebar'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
+import MyWishList from './Pages/MyWishList/MyWishList'
 
 
 
@@ -26,40 +27,41 @@ function App() {
             <HeaderMain />
             <MainPage />
             <Footer />
-
           </Route>
 
           <Route exact path="/AboutMe">
             <Header />
             <AboutMe />
             <Footer />
-
           </Route>
 
           <Route exact path="/Personal">
             <Header />
             <Personal />
             <Footer />
-
           </Route>
 
           <Route exact path="/MyFriend">
             <Header />
-            <Sidebar />
             <MyFriend />
             <Footer />
           </Route>
 
           <Route exact path='/wishlist'>
+            <Header />
             <WishlistSidebar />
             <Wishlist />
             <Footer />
-
           </Route>
 
           <Route exact path='/ErrorPage'>
             <Header />
             <ErrorPage />
+          </Route>
+
+          <Route exact path='/MyWishList'>
+            <Header />
+            <MyWishList />
           </Route>
 
 

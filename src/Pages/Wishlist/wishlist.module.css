@@ -8,7 +8,7 @@
 
 }
 
-.Wishlist-content{
+.Wishlist_content{
     margin-top: 50px;
 }
 
@@ -28,7 +28,7 @@
     
 }
 
-.wishlist-title{
+.wishlist_title{
     display: flex;
     justify-content: center;
     align-items: center;

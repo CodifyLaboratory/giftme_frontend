@@ -21,4 +21,4 @@ const Wishlist = () => {
     )
 }
 
-export default Wishlist
+export default Wishlist;

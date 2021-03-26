@@ -1,3 +1,6 @@
+.wrapper {
+    display: flex;
+}
 .input_search {
     width: 50%;
     height: 60px;

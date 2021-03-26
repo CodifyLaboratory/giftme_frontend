@@ -49,6 +49,9 @@ input {
     margin-top: 200px;
 }
 
+.wrapper {
+    display: flex;
+}
 
 
 

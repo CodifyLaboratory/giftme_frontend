@@ -1,11 +1,14 @@
 import React from 'react'
 import css from './myFriends.module.css'
 import search from './../../img/search.png'
-import FriendsInfo from './../../Components/friendsInfo/friendsInfo'
+import FriendsInfo from './../../components/friendsInfo/friendsInfo'
+import SideBar from './../../components/sidebar/sidebar'
 
 const MyFriend = () => {
     return (
-        <div>
+        <div className={css.wrapper}>
+            <SideBar />
+            <div>
             <div className={css.search}>
                 <label>
                     <input className={css.input_search} type="search" ></input>
@@ -32,6 +35,7 @@ const MyFriend = () => {
 
 
 
+        </div>
         </div>
 
     )

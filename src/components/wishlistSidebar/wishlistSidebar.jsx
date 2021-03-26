@@ -18,7 +18,7 @@ const WishlistSidebar = () => {
 
                 <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
-                    <Link className="link">Мои друзья</Link>
+                    <Link className={css.link}>Мои друзья</Link>
                 </div>
 
                 <div className={css.wrapper}>

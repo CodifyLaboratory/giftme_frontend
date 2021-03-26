@@ -8,6 +8,21 @@
 .Wishlistside_bar_content {
     margin-top: 100px;
     margin-left: 15px;
+    font-family: Montserrat , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    
+
+}
+
+.wrapper{
+    margin-top: 20px;
+}
+
+.link{
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 .share {
@@ -15,9 +30,9 @@
     border-radius: 20px;
     width: 232px;
     height: 40px;
-    font-family: Montserrat;
+    font-family: Montserrat , sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     border: none;
     margin-top: 30px;

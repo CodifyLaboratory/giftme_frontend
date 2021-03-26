@@ -21,7 +21,7 @@ function Header() {
                 </div>
                 <div className={Css.ikon}>
                     <img src={Bell} alt="Bell" />
-                    <div className="present">
+                    <div className={Css.present}>
                         <img src={Present} alt="Gift" />
                     </div>
                 </div>

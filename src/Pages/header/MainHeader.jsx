@@ -1,10 +1,10 @@
 import React from 'react';
-import Css from '../header/header.module.css'
+import Css from './../header/MainHeader.module.css'
 import Logo from '../../img/logo.png'
 
-function Header() {
+function MainHeader() {
     return (
-        <header>
+        
             <div className={Css.header}>
                 <div className={Css.logo}>
                     <img src={Logo} alt="GiftMe" />
@@ -18,7 +18,7 @@ function Header() {
 
             </div>
 
-        </header>
+        
     )
 }
-export default Header;
+export default MainHeader;

@@ -1,11 +1,15 @@
 import React from 'react'
 import css from './wishlist.module.css'
-import WishlistContent from './../../Components/wishlistContent/wishlistContent'
+import WishlistContent from '../../components/wishlistContent/wishlistContent'
+import WishlistSidebar from '../../components/wishlistSidebar/wishlistSidebar';
+import {Link} from 'react-router-dom' 
 
 
 const Wishlist = () => {
     return (
-        <div className={css.Wishlist_content}>
+        <div>
+        <div className={css.wishlist_content}>
+            <WishlistSidebar />
             <div>
                 <h2 className={css.wishlist_title}>Список желаний</h2>
                 <WishlistContent />
@@ -15,8 +19,8 @@ const Wishlist = () => {
                 <WishlistContent />
             </div>
 
-            <a className={css.moreWish}>Показать еще...</a>
-
+        </div>
+        <Link className={css.more_Wish}>Показать еще...</Link>
         </div>
     )
 }

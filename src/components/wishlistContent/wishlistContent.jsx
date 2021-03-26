@@ -3,6 +3,7 @@ import wish from './../../img/wish.png'
 import css from './wishlistContent.module.css'
 
 
+
 const WishlistContent = () => {
     return(
         <div className={css.wishlist}>
@@ -20,6 +21,7 @@ const WishlistContent = () => {
         
            </div>
            <input className={css.input_wish}></input>
+          
            </div>
     )
 }

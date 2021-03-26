@@ -1,15 +1,7 @@
-.wishlist {
-   display: flex;
-   border: 1px solid #D2D2D2;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-   align-items: center;
-   margin-bottom: 30px;
-   margin-left: 80px;
 
-}
-
-.Wishlist_content{
-    margin-top: 50px;
+.wishlist_content{
+  
+    display: flex;
 }
 
 .wishlist>img{
@@ -18,29 +10,21 @@
     margin-left: 10px;
 }
 
-.wish{
-    margin-left: 25px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    
-}
 
 .wishlist_title{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat;
+    font-family: Montserrat , sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 40px;
     color: #6860BC;
+    margin: 30px;
 }
 
-.moreWish{
+.more_Wish{
     display: flex;
     justify-content: center;
+    align-items: center;
 }

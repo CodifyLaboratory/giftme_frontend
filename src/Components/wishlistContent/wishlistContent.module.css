@@ -29,3 +29,60 @@
     line-height: 15px;
     
 }
+
+.modal {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.modal_title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6860BC;
+    }
+
+.button{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 48px;
+   
+}
+
+.undo  {
+    border: 1px solid rgba(26, 26, 26, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 115px;
+    height: 40px;
+}
+
+.submit {
+    background: #FFCA12;
+    border: 1px solid #FFCA12;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 115px;
+    height: 40px;
+}
+
+.star {
+    margin: 5px;
+}
+
+.h1 {
+    margin: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6860BC;
+}
+
+.cancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}

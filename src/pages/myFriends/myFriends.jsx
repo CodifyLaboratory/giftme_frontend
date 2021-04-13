@@ -1,8 +1,8 @@
 import React from 'react'
 import css from './myFriends.module.css'
 import search from './../../img/search.png'
-import FriendsInfo from '../../components/friendsInfo/friendsInfo'
-import Sidebar from '../../components/sidebar/sidebar'
+import FriendsInfo from '../../Components/friendsInfo/friendsInfo'
+import Sidebar from '../../Components/sidebar/sidebar'
 
 const MyFriend = () => {
     return (

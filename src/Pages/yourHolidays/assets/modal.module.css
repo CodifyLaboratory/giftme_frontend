@@ -1,0 +1,161 @@
+
+
+.modal_block {
+  position: absolute;
+  width: 426px;
+  padding-left: 270px;
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.holiday_modal_form {
+  height: 433px;
+  padding-left: 63px;
+  background-color: #F7F6FF;
+  border-radius: 20px;
+}
+
+.modal_gift_name {
+  padding-top: 55px;
+  width: 300px;
+  height: 77px;
+
+}
+
+.modal_gift_date {
+  width: 300px;
+  height: 77px;
+  padding-top: 30px;
+}
+
+.modal_input {
+  width: 300px;
+  height: 50px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.modal_date_input {
+  position: relative;
+  width: 140px;
+  height: 50px;
+  
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.modal_date_input::placeholder {
+  position: relative;
+  font-size: 16px;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  
+  color: #000000;
+
+  background: #FFFFFF;
+}
+
+.modal_date_selector {
+  font-family: 'Montserrat';
+  position: relative;
+  width: 140px;
+  height: 50px;
+  -webkit-appearance: none;
+
+  font-size: 16px;
+
+  margin-left: 20px;
+  padding-left: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+select.modal_date_selector {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position:
+      calc(100% - 20px) calc(1em + 6px),
+      calc(100% - 15px) calc(1em + 6px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+
+.modal_button_block {
+  padding-top: 50px;
+  width: 320px;
+  height: 100px;
+  padding-left: 23px;
+}
+
+
+.modal_close_button {
+  position: relative;
+  width: 117px;
+  height: 50px;
+  float: left;
+  /* березовый */
+  background: #1DB3C3;
+  border-radius: 10px;
+}
+
+.modal_save_button {
+  position: relative;
+  margin-left: 24px;
+  width: 117px;
+  height: 50px;
+  float: left;
+
+  border: 1px solid #1DB3C3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.save_button_style {
+  position: absolute;
+  padding-left: 11px;
+  padding-top: 12px;
+
+  /* big button */
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #FBFBFB;
+  text-decoration: none;
+
+}
+
+.close_button_style {
+  position: absolute;
+  padding-left: 23px;
+  padding-top: 12px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}

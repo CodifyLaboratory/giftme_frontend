@@ -1,0 +1,145 @@
+
+
+.holiday_scene {
+  position: absolute;
+  left: 320px;
+  min-height: 949px;
+  min-width: 76.3%;
+}
+
+/* UPPER SCENE */
+
+.upper_scene {
+  position: relative;
+  padding-top: 53px;
+  padding-left: 44px;
+  padding-right: 36px;
+}
+
+.upper_scene_label {
+  position: relative;
+  width: 327px;
+  height: 44px;
+  
+  float: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #000000;
+
+}
+
+.upper_scene_button {
+  position: relative;
+  
+  width: 216px;
+  height: 44px;
+  left: 420px;
+
+  /* фиолетовый */
+
+  background: #D4C2FC;
+  border-radius: 30px;
+  border-color: #0000;
+}
+
+.button_image {
+  position: absolute;
+  left: 8.67%;
+
+}
+
+.button_text {
+  padding-left: 26px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+
+/* LIST SCENE */
+
+.list_scene {
+  position: absolute;
+  padding-left: 44px;
+  padding-top: 156px;
+  width: 960px;
+}
+
+
+/* HOLIDAY BLOCK */
+.holiday_block {
+  position: relative;
+  height: 70px;
+  background: #FFFFFF;
+  border: 1px solid #F5F5F5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.holiday_date {
+  position: relative;
+  width: 122px;
+  padding-top: 22px;
+  padding-left: 10px;
+  float: left;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #3C79F0;
+} 
+
+.holiday_name {
+  position: relative;
+  width: 290px;
+  float: left;
+  padding-left: 82px;
+  padding-top: 22px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.holiday_block_button {
+  padding-left: 860px;
+}
+
+.pallete_button {
+  position: relative;
+  border: none;
+  background-color: #FFFFFF;
+  padding-top: 16px;
+}
+
+.settings_button {
+  position: absolute;
+  border: none;
+  background-color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.pallete {
+  position: relative;
+  padding-top: 1px;
+  border: 0;
+}
+
+.settings {
+  position: relative;
+  padding-left: 15px;
+  border: 0;
+}
+
+.pallete_button:focus {
+  outline: none !important;
+}

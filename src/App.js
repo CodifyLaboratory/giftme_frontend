@@ -1,4 +1,4 @@
-import Header from './components/Header/header'
+import Header from './Components/Header/header'
 import AboutMe from './Pages/AboutMe/AboutMe'
 import Personal from './Pages/PersonalArea/Personal'
 import './App.css'
@@ -10,6 +10,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import MyWishList from './Pages/MyWishList/MyWishList'
 import Cart from './Pages/cartPage/cartPage'
+import HolidayList from './Pages/yourHolidays/holidayList'
+import MainHeader from './Pages/header/MainHeader'
+import SignUp from './Pages/signUp/signUp'
+import Login from './Pages/login/login'
+
 
 
 
@@ -65,6 +70,23 @@ function App() {
             <Cart />
           </Route>
 
+
+          <Route exact path='/holidayList'>
+            
+            <Header/>
+            <HolidayList/>
+            <Footer/>
+          </Route>
+
+          <Route exact path='/SignUp'>
+            <MainHeader/>
+            <SignUp/>
+          </Route>
+
+          <Route exact path='/Login'>
+            <MainHeader/>
+            <Login/>
+          </Route>
 
         </Switch>
       </div>

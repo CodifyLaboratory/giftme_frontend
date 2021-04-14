@@ -1,11 +1,12 @@
 .input_search {
-    width: 50%;
+    width: calc(100% - 500px);
     height: 60px;
     border: 2px solid #7BA7AB;
     border-radius: 30px;
     margin-top: 30px;
     border-color: #FFCA12;
     margin-left: 250px;
+    margin-right: 250px;
     padding-left: 80px;
     padding-right: 30px;
 }
@@ -55,4 +56,6 @@ input {
 
 
 
-
+.body{
+    width: calc(100vw - 200px);
+}

@@ -47,6 +47,11 @@ form {
 
 .sct {
     width: 162px;
+    text-align-last: center;
+}
+
+.month {
+    text-align: center;
 }
 
 .sct>option {
@@ -234,12 +239,12 @@ span {
     top: 29px;
 }
 
-.year {
-    width: 162px;
-}
+
 .year {
     display: flex;
     position: relative;
+    width: 162px;
+
 }
 .year>img {
     position: absolute;
@@ -251,10 +256,15 @@ span {
     font-family: Montserrat, sans-serif;
     width: 162px;
     font-size: 17px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 50px;
 }
 
 .year>input::placeholder {
     color:#000000;
+    text-align: center;
   }
 
 

@@ -9,6 +9,7 @@ import Wishlist from './Pages/Wishlist/wishlist'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import MyWishList from './Pages/MyWishList/MyWishList'
+import Cart from './Pages/cartPage/cartPage'
 
 
 
@@ -26,7 +27,7 @@ function App() {
           </Route>
 
           <Route exact path="/AboutMe">
-           <Header/>
+            <Header />
             <AboutMe />
             <Footer />
           </Route>
@@ -38,20 +39,14 @@ function App() {
           </Route>
 
           <Route exact path="/MyFriend">
-         <Header/>
-         
-            
+            <Header />
             <MyFriend />
-          
             <Footer />
           </Route>
 
           <Route exact path='/wishlist'>
-            <Header/>
-            
-            
+            <Header />
             <Wishlist />
-            
             <Footer />
           </Route>
 
@@ -63,6 +58,11 @@ function App() {
           <Route exact path='/MyWishList'>
             <Header />
             <MyWishList />
+          </Route>
+
+          <Route exact path='/CartPage'>
+            <Header />
+            <Cart />
           </Route>
 
 

@@ -1,0 +1,8 @@
+
+body {
+  position: relative;
+  background: #FFFFFF
+}
+.scene {
+  display: flex;
+}

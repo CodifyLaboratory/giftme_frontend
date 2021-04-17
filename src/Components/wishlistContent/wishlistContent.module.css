@@ -17,10 +17,11 @@
     align-items: center;
     margin-bottom: 30px;
     margin-left: 80px;
- 
+    width: 927px;
+    height: 100px;
  }
 
- .wish{
+ .wish {
     margin-left: 25px;
     font-family: Montserrat;
     font-style: normal;

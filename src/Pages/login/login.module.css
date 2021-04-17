@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 19.5px;
+}
+
+h1, h2, h3, h4, h5 h6 {
+  margin: 0;
+}
+
+
+/* SCENE */ 
+
+.Scene {  
+  width: 100%;
+  min-height: 1500px;
+  background-color: #FFFFFF;
+}
+
+.page_container {
+  position: relative; 
+  padding-left: 340px;
+  padding-right: 300px;
+  top: 221px;
+}
+
+ /* LOGIN FORM */
+.login_form {
+  width: 800px;
+  height: 900px;
+  background: #EAE8FF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: #000000;
+  
+}
+ /* TITLE */
+.title {
+  position: absolute;
+  width: 171px;
+  height: 23px;
+  padding: 315px;
+  padding-top: 141px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.title_description {
+  position: absolute;
+  width: 190px;
+  height: 24px;
+  padding: 311px;
+  padding-top: 169px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.inner_title_description {
+  text-decoration: underline;
+  color: #95BBD9;
+}
+
+/* LOG BODY */ 
+
+.login_body {
+  position: absolute;
+  width: 600px;
+  padding: 0 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  
+}
+/* INPUT FIELDS */
+.input_field_email {
+  padding-top: 223px;
+  height: 83.42px;
+  
+}
+.input_field_password {
+  padding-top: 20.58px;
+  height: 60.67px;
+}
+.input_field_re_password {
+  padding-top: 15px;
+  height: 83.66px;
+}
+
+/* INPUT PLACEHOLDER */
+
+input::placeholder {
+  position: absolute;
+  width: 58px;
+  height: 20px;
+  size: 18px;
+  padding-left: 20px;
+  
+  /* big button */
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  
+  color: #000000;
+  
+}
+
+
+/* REQUIRE MARKS */
+.require_mark_email{
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  left: 110px;
+  top: 223px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FA0707;
+}
+
+.require_mark_password{
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  left: 110px;
+  top: 327px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FA0707;
+}
+
+
+/*  INNER INPUTS */
+.inner_input_email {
+  position: absolute;
+  width: 600px;
+  height: 60.67px;
+  top: 245.74px;
+  border-color: #0000;
+  /* белый */
+  background: #FBFBFB;
+  border-radius: 20px;
+}
+.inner_input_password {
+  position: absolute;
+  width: 600px;
+  height: 60.67px;
+  top: 349.99px;
+  border-color: #0000;
+
+  /* белый */
+  background: #FBFBFB;
+  border-radius: 20px;
+}
+
+
+
+
+/* PASSWORD DESCRIPTION */
+.input_password_description {
+  position: absolute;
+  width: 246px;
+  height: 20px;
+  top: 416px;
+  left: 110px;
+  
+  font-size: 14px;
+  line-height: 22px;
+  
+  color: rgba(26, 26, 26, 0.72);  
+}
+
+.forgot_password {
+  position: absolute;
+  width: 156px;
+  height: 22px;
+  left: 541px;
+  top: 450px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+
+}
+
+
+/* SAVE BUTTON */ 
+.button_block {
+  position: absolute;
+ 
+  left: 214px;
+  top: 580.34px;
+}
+
+.save_button {
+  position: absolute;
+  width: 371.28px;
+  height: 60.67px;
+  background: #1DB3C3;
+  border-radius: 20px;  
+  border-color: #0000;
+}
+
+.save_button_label {
+  padding-top: 21.66px;
+  padding: 133.50px;
+  width: 104px;
+  height: 17px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+
+  color: #FBFBFB;
+}
+
+.button_block_description {
+  position: absolute;
+  width: 231px;
+  height: 22px;
+  left: 75px;
+  top: 85.99px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+
+}
+
+.registration_link {
+  position: absolute;
+  width: 131px;
+  height: 22px;
+  left: 85px;
+  top: 115.99px;
+  
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  
+  color: #066F9C;
+  
+}
+
+
+
+
+
+
+

@@ -72,7 +72,6 @@ const MainPage = () => {
             <div className={Css.screen_img}>
                 <img src={screen} alt="screen" />
             </div>
-
         </div>
     )
 }

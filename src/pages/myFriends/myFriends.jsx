@@ -3,7 +3,6 @@ import css from './myFriends.module.css'
 import search from './../../img/search.png'
 import FriendsInfo from '../../components/friendsInfo/friendsInfo'
 import SideBar from './../../components/sidebar/sidebar';
-
 const MyFriend = () => {
     const [friends, setFriends] = useState([])
     

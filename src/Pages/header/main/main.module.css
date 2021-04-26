@@ -2,8 +2,6 @@
 .content {
     display: flex;
     font-family: 'Montserrat' , sans-serif;
-    
-
 }
 
 .textContent {
@@ -12,7 +10,6 @@
     width: 330px;
     margin-top: 100px;
     margin-left: 120px;
-
 }
 
 .photoContent {

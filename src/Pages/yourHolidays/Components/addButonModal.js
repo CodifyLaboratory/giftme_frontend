@@ -19,23 +19,23 @@ class AddModal extends React.Component {
   render() {
     return (
       <>
-      <button class={Css.upper_scene_button} onClick={() => this.handleClick()}>
-        <img src={plusButton} class={Css.button_image}/>
-        <h4 class={Css.button_text}>      
-          Добавь праздник
+        <button class={Css.upper_scene_button} onClick={() => this.handleClick()}>
+          <img src={plusButton} class={Css.button_image} />
+          <h4 class={Css.button_text}>
+            Добавь праздник
         </h4>
-      </button> 
-      {this.state.display ? <div class={css.modal_block}>
+        </button>
+        {this.state.display ? <div class={css.modal_block}>
           <div class={css.holiday_modal_form}>
 
             <div class={css.modal_gift_name}>
-              <h4 class={css.gift_label}>Название подарка</h4>
-              <input class={css.modal_input}/>
+              <h4 class={css.gift_label}>Название праздника</h4>
+              <input class={css.modal_input} />
             </div>
 
             <div class={css.modal_gift_date}>
               <h4 class={css.gift_label}>Дата</h4>
-              <input class={css.modal_date_input} placeholder='День'/>
+              <input class={css.modal_date_input} placeholder='День' />
               <select placeholder='Месяц' class={css.modal_date_selector}>
                 <option value='january'>Январь</option>
                 <option value='february'>Февраль</option>
@@ -53,16 +53,16 @@ class AddModal extends React.Component {
             </div>
 
             <div class={css.modal_button_block}>
-              <div class={css.modal_close_button}> 
-                <span class={css.save_button_style}>Сохранить</span> 
+              <div class={css.modal_close_button}>
+                <span class={css.save_button_style}>Сохранить</span>
               </div>
-              <div class={css.modal_save_button} onClick={ this.handleClose }> 
-                <h4 class={css.close_button_style}>Закрыть</h4> 
+              <div class={css.modal_save_button} onClick={this.handleClose}>
+                <h4 class={css.close_button_style}>Закрыть</h4>
               </div>
             </div>
-            
+
           </div>
-        </div> : null }
+        </div> : null}
       </>
     )
   }

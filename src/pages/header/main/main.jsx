@@ -8,12 +8,11 @@ import gift from '../../../img/gift.png'
 import tree from '../../../img/tree.png'
 import screen from '../../../img/screen.png'
 import Css from './main.module.css'
-import MainHeader from './../MainHeader'
+
 
 const MainPage = () => {
     return (
         <div>
-            <MainHeader />
             <div className={Css.content}>
                 <div className={Css.textContent}>
                     <h1>Gift me</h1>

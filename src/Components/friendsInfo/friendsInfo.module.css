@@ -7,10 +7,16 @@
     
 }
 
-.friends>input {
+.description{
     position: absolute;
-    margin-top: 50px;
-    margin-left: 120px;
+    width: 200px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7;
+    color: #D7D7D7;
+    top: 25px;
+    left: 100px;
+    overflow: hidden;
 }
 
 .friends>p {

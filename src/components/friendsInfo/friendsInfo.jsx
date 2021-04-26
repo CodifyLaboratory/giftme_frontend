@@ -2,7 +2,7 @@ import React from 'react'
 import css from './friendsInfo.module.css'
 import image from './../../img/image.png'
 
-const FriendsInfo = () => {
+const FriendsInfo = ({first_name, last_name, description}) => {
 
     return (
 
@@ -13,8 +13,8 @@ const FriendsInfo = () => {
                 <span></span>
             </div>
             <img src={image} alt="image" />
-            <p>Курманалиева Айгерим</p>
-            <input type="text" placeholder="Описание о себе" />
+            <p>{`${first_name} ${last_name}`}</p>
+            <div className={css.description}>{description}</div>
 
         </div>
 

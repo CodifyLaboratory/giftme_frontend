@@ -264,6 +264,19 @@ input::placeholder {
   
 }
 
+.input_error {
+  margin-left: 20px;
+  font-size: 14px;
+  color:red;
+}
+
+.modal_text {
+  padding: 20px;
+  background-color: #EAE8FF;
+  color: #000;
+  border-radius: 7px;
+}
+
 
 
 

@@ -1,10 +1,15 @@
 .footer {
-    background: rgba(0, 0, 0, 0.85);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
     height: 150px;
     color: white;
     display: flex;
     justify-content: space-around;
     font-weight: 500;
+    bottom: 0;
+    left: 0;
     
 }
 

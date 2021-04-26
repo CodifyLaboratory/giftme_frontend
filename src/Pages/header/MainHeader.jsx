@@ -1,6 +1,7 @@
 import React from 'react';
 import Css from './../header/MainHeader.module.css'
 import Logo from '../../img/logo.png'
+import {NavLink} from "react-router-dom";
 
 function MainHeader() {
     return (
@@ -10,10 +11,14 @@ function MainHeader() {
                     <img src={Logo} alt="GiftMe" />
                 </div>
                 <div className={Css.menu}>
-                    <nav className={Css.nav1}>О нас</nav>
-                    <nav>Миссия сайта</nav>
-                    <button className={Css.nav2}>Регистрация</button>
-                    <nav>Войти</nav>
+                    <NavLink to="/" className={Css.nav1}>
+                    О нас
+                    </NavLink>
+                    <NavLink to="/" className={Css.nav}>Миссия сайта</NavLink>
+                    <NavLink to="/SignUp" className={Css.nav2}>
+                   Регистрация
+                    </NavLink>
+                   <NavLink to="/Login" className={Css.nav}>Войти</NavLink>
                 </div>
 
             </div>

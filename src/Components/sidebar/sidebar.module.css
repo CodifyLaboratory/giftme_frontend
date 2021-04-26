@@ -1,21 +1,28 @@
 .side_bar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
     background-color: #EAE8FF;
     height: 1000px;
-    width: 600px;
+    width: 320px;
     color: #6860BC;
+    padding: 0 115px 0 30px;
 }
 
 .side_bar_content {
-    padding-top: 100px;
+    padding-top: 180px;
     margin-left: 10px;
 }
 
 
 .link {
+    color: #6860BC;
     text-decoration: none;
     padding-left: 10px;
 }
 
 .wrapper {
     margin-bottom: 20px;
+    display: flex;
+    white-space: nowrap;
 }

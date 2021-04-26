@@ -2,70 +2,106 @@ import React from "react";
 import Css from '../assets/holiday.module.css'
 import css from '../assets/modal.module.css'
 import plusButton from '../../../Images/plusButton.svg'
+import {useForm} from "react-hook-form";
+import {useDispatch} from "react-redux";
+import {setHolidaysFetch} from "../../../store/actions/userAction";
 
-class AddModal extends React.Component {
-  state = {
-    display: false
-  }
+const days = [];
+for (let i = 1; i <= 31; i++) {
+  days.push(i);
+}
 
-  handleClick = () => {
-    this.setState({ display: !this.state.display })
+const AddModal = () => {
+  const dispatch = useDispatch()
+  const [visible, setVisible] = React.useState(false)
+  const { register, handleSubmit, reset } = useForm();
+
+  const handleClick = () => {
+    setVisible(true)
   };
 
-  handleClose = () => {
-    this.setState({ display: false })
+ const handleClose = () => {
+    setVisible(false )
   };
 
-  render() {
+
+
+    const submitHandler = (data) => {
+      // dispatch(setHolidaysFetch(data))
+      console.log(data)
+      reset()
+      setVisible(false)
+    }
+
     return (
       <>
-      <button class={Css.upper_scene_button} onClick={() => this.handleClick()}>
-        <img src={plusButton} class={Css.button_image}/>
-        <h4 class={Css.button_text}>      
+      <button className={Css.upper_scene_button} onClick={handleClick}>
+        <img src={plusButton} className={Css.button_image} alt="+"/>
+        <h4 className={Css.button_text}>
           Добавь праздник
         </h4>
-      </button> 
-      {this.state.display ? <div class={css.modal_block}>
-          <div class={css.holiday_modal_form}>
-
-            <div class={css.modal_gift_name}>
-              <h4 class={css.gift_label}>Название подарка</h4>
-              <input class={css.modal_input}/>
+      </button>
+      {visible ?
+          <div className={css.modal_popup} onClick={handleClose}>
+          <div className={css.modal_block} onClick={e => e.stopPropagation()}>
+        <form action="" onSubmit={handleSubmit(submitHandler)}>
+          <div className={css.holiday_modal_form}>
+            <div className={css.modal_gift_name}>
+              <h4 className={css.gift_label}>Название подарка</h4>
+              <input
+                  {...register("name",{required: true})}
+                  className={css.modal_input}/>
             </div>
 
-            <div class={css.modal_gift_date}>
-              <h4 class={css.gift_label}>Дата</h4>
-              <input class={css.modal_date_input} placeholder='День'/>
-              <select placeholder='Месяц' class={css.modal_date_selector}>
-                <option value='january'>Январь</option>
-                <option value='february'>Февраль</option>
-                <option value='match'>Март</option>
-                <option value='april'>Апрель</option>
-                <option value='may'>Май</option>
-                <option value='june'>Июнь</option>
-                <option value='jule'>Июль</option>
-                <option value='august'>Август</option>
-                <option value='september'>Сентябрь</option>
-                <option value='october'>Октябрь</option>
-                <option value='november'>Ноябрь</option>
-                <option value='december'>Декабрь</option>
+            <div className={css.modal_gift_date}>
+              <h4 className={css.gift_label}>Дата</h4>
+              <select
+                  defaultValue="0"
+                  {...register("day",{required: true})}
+                  className={css.modal_date_input}
+              >
+                <option value="0" selected disabled>день</option>
+                {days.map(i => (
+                    <option key={i} value={i}>{i}</option>
+                ))}
               </select>
+                <select
+                    {...register("month",{required: true})}
+                    className={css.modal_date_selector}
+                    defaultValue='0'
+                >
+                  <option value="0" disabled>месяц</option>
+                  <option value="Январь">Январь</option>
+                  <option value="Февраль">Февраль</option>
+                  <option value="Март">Март</option>
+                  <option value="Апрель">Апрель</option>
+                  <option value="Май">Май</option>
+                  <option value="Июнь">Июнь</option>
+                  <option value="Июль">Июль</option>
+                  <option value="Август">Август</option>
+                  <option value="Сентярь">Сентябрь</option>
+                  <option value="Октябрь">Октябрь</option>
+                  <option value="Ньябрт">Ноябрь</option>
+                  <option value="Декабрь">Декабрь</option>
+                </select>
             </div>
 
-            <div class={css.modal_button_block}>
-              <div class={css.modal_close_button}> 
-                <span class={css.save_button_style}>Сохранить</span> 
-              </div>
-              <div class={css.modal_save_button} onClick={ this.handleClose }> 
-                <h4 class={css.close_button_style}>Закрыть</h4> 
+            <div className={css.modal_button_block}>
+              <button type="submit" className={css.modal_close_button}>
+                <span className={css.save_button_style}>Сохранить</span>
+              </button >
+              <div className={css.modal_save_button} onClick={handleClose}>
+                <h4 className={css.close_button_style}>Закрыть</h4>
               </div>
             </div>
-            
+
           </div>
-        </div> : null }
+        </form>
+        </div>
+          </div>
+          : null }
       </>
     )
-  }
 }
 
 

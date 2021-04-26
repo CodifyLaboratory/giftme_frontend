@@ -1,11 +1,13 @@
 import React from 'react'
 import css from '../MyWishList/MyWishList.module.css'
-import MyWishContent from '../../Components/MyWishContent/MyWishContent'
-import { Link } from 'react-router-dom'
+import MyWishContent from '../../components/MyWishContent/MyWishContent'
 import plus from '../../Images/plus.png'
 import Modal from 'react-awesome-modal';
 import Pencil from '../../Images/pencil.png'
 import plus2 from '../../Images/plus2.png'
+import {useForm} from "react-hook-form";
+import {useDispatch, useSelector} from "react-redux";
+import {getWishesFetch, setWishesFetch} from "../../store/actions/userAction";
 
 
 
@@ -13,7 +15,9 @@ import plus2 from '../../Images/plus2.png'
 
 
 function MyWishList() {
-
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const wishes = useSelector(state=>state.user.wishes)
+    const dispatch = useDispatch();
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
@@ -23,6 +27,24 @@ function MyWishList() {
     const handleClose = () => {
         setOpen(false);
     };
+
+    const submitHandler = (data) => {
+        const formData = new FormData();
+        formData.append('name', data.name)
+        formData.append('description', data.description)
+        formData.append('date', data.date)
+        formData.append('link', data.link)
+        formData.append('image', data.image[0])
+        console.log(Array.from(formData))
+        // dispatch(setWishesFetch(formData))
+        reset()
+    }
+
+
+    React.useEffect(()=>{
+        dispatch(getWishesFetch())
+    }, [])
+
 
     return (
         <div className={css.wrapper}>
@@ -37,49 +59,83 @@ function MyWishList() {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
+                <form action="" onSubmit={handleSubmit(submitHandler)}>
                 <div className={css.modal}>
                     <div className={css.content}>
                         <label htmlFor="nameOfProduct" className={css.label}>
                             <div>Название подарка</div>
-                            <input type="text" id="nameOfProduct" />
+                            <input
+                                type="text"
+                                {...register("name",{required:true})}
+                            />
                             <img src={Pencil} alt="Pencil" />
                         </label>
                         <label htmlFor="description" className={css.label}>
                             <div>Описание подарка</div>
-                            <input type="text" id="description" />
+                            <input
+                                type="text"
+                                {...register("description",{})}
+                            />
                             <img src={Pencil} alt="Pencil" />
                             <div className={css.symbol}>40 символов</div>
                         </label>
                         <label htmlFor="date" className={css.label}>
                             <div>Дата</div>
-                            <input type="text" id="date" />
+                            <input
+                                type="text"
+                                {...register("date",{pattern: /\d{4}-\d{2}-\d{2}/})}
+                            />
+                            {errors.date && <p className={css.date_error}>Пишите дату в формате гггг-мм-дд</p>}
                             <img src={Pencil} alt="Pencil" />
                         </label>
                         <label htmlFor="link" className={css.labelLink}>
                             <div>Ссылка</div>
-                            <input type="text" id="link" />
+                            <input
+                                type="text"
+                                {...register("link",{})}
+                            />
                             <img src={Pencil} alt="Pencil" />
                         </label>
                         <label htmlFor="foto" className={css.foto}>
                             <div>Фото</div>
-                            <input type="file" id="foto" />
+                            <input
+                                type="file"
+                                accept=".jpg, .jpeg, .png"
+                                {...register("image",{})}
+                            />
                             <div className={css.inputFoto}>
                                 <img src={plus2} alt="plus" />
                             </div>
                         </label>
                         <div className={css.btns}>
-                            <button>Сохранить</button>
+                            <button type="submit">Сохранить</button>
                             <button>Изменить</button>
                         </div>
                     </div>
                 </div>
+                </form>
             </Modal>
+
+            {
+                wishes && wishes.map(item=>(
+                    <MyWishContent
+                        key={item.id}
+                        name={item.name}
+                        date={item.date}
+                        link={item.link}
+                        description={item.description}
+                        img={item.image}
+                    />
+
+                ))
+            }
+
             <MyWishContent />
-            <MyWishContent />
-            <MyWishContent />
-            <MyWishContent />
-            <MyWishContent />
-            <Link className={css.more}>Показать еще...</Link>
+
+
+
+
+            <a href="#" className={css.more}>Показать еще...</a>
         </div>
 
     )

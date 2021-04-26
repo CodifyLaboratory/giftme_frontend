@@ -249,6 +249,11 @@ input::placeholder {
   border-color: #0000;
 }
 
+.save_button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
 .save_button_label {
   padding-top: 21.66px;
   padding: 133.50px;
@@ -280,6 +285,26 @@ input::placeholder {
   line-height: 22px;
 
   color: #000000;
+}
+
+.modal_text {
+  padding: 20px;
+  background-color: #EAE8FF;
+  color: #000;
+  border-radius: 7px;
+}
+
+.input_error {
+  margin-left: 20px;
+  font-size: 14px;
+  color:red;
+}
+
+.input_error2 {
+  margin-left: 20px;
+  font-size: 14px;
+  color:red;
+  margin-top: 25px;
 }
 
 

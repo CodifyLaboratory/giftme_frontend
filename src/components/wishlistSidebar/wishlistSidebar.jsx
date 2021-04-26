@@ -4,7 +4,7 @@ import home from './../../img/home.png'
 import friends from './../../img/friends.png'
 import holidays from './../../img/holidays.png'
 import gifts from './../../img/gifts.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const WishlistSidebar = () => {
     return (
@@ -13,22 +13,22 @@ const WishlistSidebar = () => {
             <div className={css.Wishlistside_bar_content}>
                 <div className={css.wrapper}>
                     <img src={home} alt="home" />
-                    <Link className={css.link}>Личный кабинет</Link>
+                    <NavLink to="/Personal" className={css.link}>Личный кабинет</NavLink>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
-                    <Link className={css.link}>Мои друзья</Link>
+                    <NavLink to="/MyFriend" className={css.link}>Мои друзья</NavLink>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={holidays} alt="holidays" />
-                    <Link className={css.link}>Мои праздники</Link>
+                    <NavLink to="/holidays" className={css.link}>Мои праздники</NavLink>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={gifts} alt="gifts" />
-                    <Link className={css.link}>Мой список желаний</Link>
+                    <NavLink to="/MyWishList" className={css.link}>Мой список желаний</NavLink>
                 </div>
             </div>
 

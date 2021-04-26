@@ -3,7 +3,7 @@ import css from './sidebar.module.css'
 import friends from './../../img/friends.png'
 import holidays from './../../img/holidays.png'
 import gifts from './../../img/gifts.png'
-import { Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const SideBar = () => {
     return (
@@ -14,17 +14,17 @@ const SideBar = () => {
 
                 <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
-                    <Link className={css.link}>Мои друзья</Link>
+                    <NavLink to="/MyFriend" className={css.link}>Мои друзья</NavLink>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={holidays} alt="holidays" />
-                    <Link className={css.link}>Мои праздники</Link>
+                    <NavLink to="/holidayList" className={css.link}>Мои праздники</NavLink>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={gifts} alt="gifts" />
-                    <Link className={css.link}>Мои подарки</Link>
+                    <NavLink to="" className={css.link}>Мои подарки</NavLink>
                 </div>
             </div>
 

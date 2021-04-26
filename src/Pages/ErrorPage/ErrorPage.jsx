@@ -1,6 +1,6 @@
 import React from 'react'
 import Css from '../ErrorPage/ErrorPage.module.css'
-import Error from '../../Images/Error.png'
+
 
 
 function ErrorPage() {

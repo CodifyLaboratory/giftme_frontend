@@ -1,7 +1,7 @@
 .page {
     margin-top: 103px;
 }
-form {
+.page>form {
     text-align: left;
     width: 600px;
     margin: 0 auto;
@@ -266,5 +266,11 @@ span {
     color:#000000;
     text-align: center;
   }
+
+.input_error {
+    margin: 0 auto;
+    font-size: 14px;
+    color:red;
+}
 
 

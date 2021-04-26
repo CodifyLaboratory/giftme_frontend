@@ -17,9 +17,7 @@
     height: 29px;
     font-family: 'Montserrat', sans-serif;
 }
-.menu>nav {
-    margin:0 20px;
-}
+
 .present>img {
     height: 31.5px;
     width: 31.5px;
@@ -38,10 +36,18 @@
     margin: 10px 0 0 53.5px;
 
 }
-.menu {
+
+
+.menu>a{
+    
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    text-decoration: none;
+    padding: 50px;
+    
 }
+
+

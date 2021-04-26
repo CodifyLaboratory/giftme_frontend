@@ -1,6 +1,6 @@
 import React from 'react'
 import css from '../MyWishList/MyWishList.module.css'
-import MyWishContent from '../../Components/MyWishContent/MyWishContent'
+import MyWishContent from '../../components/MyWishContent/MyWishContent'
 import { Link } from 'react-router-dom'
 import plus from '../../Images/plus.png'
 import Modal from 'react-awesome-modal';

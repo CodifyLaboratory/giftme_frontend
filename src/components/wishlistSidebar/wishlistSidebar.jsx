@@ -13,12 +13,12 @@ const WishlistSidebar = () => {
             <div className={css.Wishlistside_bar_content}>
                 <div className={css.wrapper}>
                     <img src={home} alt="home" />
-                    <Link className={css.link}>Личный кабинет</Link>
+                    <Link to ='/personal'className={css.link}>Личный кабинет</Link>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
-                    <Link className={css.link}>Мои друзья</Link>
+                    <Link to ='/myFriend' className={css.link}>Мои друзья</Link>
                 </div>
 
                 <div className={css.wrapper}>
@@ -28,7 +28,7 @@ const WishlistSidebar = () => {
 
                 <div className={css.wrapper}>
                     <img src={gifts} alt="gifts" />
-                    <Link className={css.link}>Мой список желаний</Link>
+                    <Link to ='/myWishlist'className={css.link}>Мой список желаний</Link>
                 </div>
             </div>
 

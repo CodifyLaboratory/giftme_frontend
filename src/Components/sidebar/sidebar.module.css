@@ -1,13 +1,13 @@
 .side_bar {
     background-color: #EAE8FF;
-    height: 1000px;
-    width: 200px;
+    min-width: 320px;
+    height: 949px;
     color: #6860BC;
 }
 
 .side_bar_content {
     padding-top: 100px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 

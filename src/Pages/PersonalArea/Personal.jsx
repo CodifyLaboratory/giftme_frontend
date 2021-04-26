@@ -6,6 +6,7 @@ import Holidays from '../../Images/holidays.png'
 import Gifts from '../../Images/gifts.png'
 import Ellips from '../../Images/ellips.png'
 import Edit from '../../Images/edit.png'
+import {Link} from 'react-router-dom'
 
 
 function Personal() {
@@ -15,19 +16,19 @@ function Personal() {
                 <div className={Css.sideBar}>
                     <div className={Css.area}>
                         <img src={Area} alt="Area" />
-                        <div>Личный кабинет</div>
+                        <Link to ='/personal'>Личный кабинет</Link>
                     </div>
                     <div className={Css.area}>
                         <img src={Friends} alt="Friends" />
-                        <div>Мои друзья</div>
+                        <Link to ='/myFriend'>Мои друзья</Link>
                     </div>
                     <div className={Css.area}>
                         <img src={Holidays} alt="Holidays" />
-                        <div>Мои праздники</div>
+                        <Link to ='/myHolidays'>Мои праздники</Link>
                     </div>
                     <div className={Css.area}>
                         <img src={Gifts} alt="Gifts" />
-                        <div>Мой список желаний</div>
+                        <Link to ='/myWishlist'>Мой список желаний</Link>
                     </div>
                     <button>Поделиться</button>
                 </div>

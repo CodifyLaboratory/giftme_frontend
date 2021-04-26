@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './wishlist.module.css'
-import WishlistContent from '../../Components/wishlistContent/wishlistContent'
-import WishlistSidebar from '../../Components/wishlistSidebar/wishlistSidebar';
+import WishlistContent from '../../components/wishlistContent/wishlistContent'
+import WishlistSidebar from '../../components/wishlistSidebar/wishlistSidebar';
 import { Link } from 'react-router-dom'
 
 

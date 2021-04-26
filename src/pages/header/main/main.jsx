@@ -17,6 +17,7 @@ const MainPage = () => {
             <div className={Css.content}>
                 <div className={Css.textContent}>
                     <h1>Gift me</h1>
+                    <br/>
                     <p>Gift.me – это сайт, где пользователи могут размещать свои желаемые подарки, даже указать ссылку на этот подарок.
 Возможность делиться вещами.</p>
                     <button className={Css.content_button}>Создать WishList</button>
@@ -70,7 +71,6 @@ const MainPage = () => {
             <div className={Css.screen_img}>
                 <img src={screen} alt="screen" />
             </div>
-
         </div>
     )
 }

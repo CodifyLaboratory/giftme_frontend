@@ -35,7 +35,7 @@ class ColorPicker extends React.Component {
           width: '36px',
           height: '14px',
           borderRadius: '2px',
-          background: `rgba(${ this.state.color.r }, ${ this.state.color.g }, ${ this.state.color.b }, ${ this.state.color.a })`,
+          background: `rgba(${this.state.color.r}, ${this.state.color.g}, ${this.state.color.b}, ${this.state.color.a})`,
         },
         swatch: {
           padding: '5px',
@@ -62,14 +62,14 @@ class ColorPicker extends React.Component {
     });
 
     return (
-      <button class={css.pallete_button}   
-              onClick={() => this.handleClick()}
-              >
-        <img src={pallette} class={css.pallete} alt='Загрузка'/> 
-        { this.state.displayColorPicker ? <div style={ styles.popover }>
-          <div style={ styles.cover } onClick={ this.handleClose }/>
-          <SketchPicker color={ this.state.color } onChange={ this.handleChange } />
-        </div> : null }
+      <button class={css.pallete_button}
+        onClick={() => this.handleClick()}
+      >
+        <img src={pallette} class={css.pallete} alt='Загрузка' />
+        { this.state.displayColorPicker ? <div style={styles.popover}>
+          <div style={styles.cover} onClick={this.handleClose} />
+          <SketchPicker color={this.state.color} onChange={this.handleChange} />
+        </div> : null}
 
       </button>
     )

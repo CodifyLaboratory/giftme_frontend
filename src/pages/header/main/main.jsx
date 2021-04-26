@@ -9,6 +9,7 @@ import tree from '../../../img/tree.png'
 import screen from '../../../img/screen.png'
 import Css from './main.module.css'
 import MainHeader from './../MainHeader'
+import {Link} from 'react-router-dom'
 
 const MainPage = () => {
     return (
@@ -17,12 +18,13 @@ const MainPage = () => {
             <div className={Css.content}>
                 <div className={Css.textContent}>
                     <h1>Gift me</h1>
+                    <br/>
                     <p>Gift.me – это сайт, где пользователи могут размещать свои желаемые подарки, даже указать ссылку на этот подарок.
 Возможность делиться вещами.</p>
-                    <button className={Css.content_button}>Создать WishList</button>
+                   <Link to = '/wishlist'><button className={Css.content_button}>Создать WishList</button></Link>
                 </div>
                 <div className={Css.photoContent}>
-                    <img src={photo} alt="photo" />
+                    <img src={photo} alt="" />
                 </div>
             </div>
             <div className={Css.content2}>
@@ -41,7 +43,7 @@ const MainPage = () => {
                     <img src={photo2} alt="photo2" />
                 </div>
             </div>
-            <div className={Css.product}>
+            <div id='Mission' className={Css.product}>
                 <div className={Css.row}>
                     <div className={Css.blog}>
                         <img src={note} alt="note" />

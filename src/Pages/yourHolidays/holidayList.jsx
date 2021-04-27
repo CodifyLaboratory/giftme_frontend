@@ -12,8 +12,6 @@ const HolidayList = () => {
     const dispatch = useDispatch()
     const holidays = useSelector(state => state.user.holidays)
 
-    console.log(holidays)
-
     React.useEffect(()=>{
         dispatch(getHolidaysFetch())
     }, [])
@@ -31,10 +29,13 @@ const HolidayList = () => {
 
             {
                 holidays && holidays.map(item=>(
-                    <ListOfHoliday key={item.id} name={item.name} date={item.date}/>
+                    <ListOfHoliday key={item.id} name={item.name} day={item.day} month={item.month}/>
                 ))
             }
 
+            {
+                !holidays.length && <div className={css.no_holidays}>Праздников пока нет</div>
+            }
 
 
 

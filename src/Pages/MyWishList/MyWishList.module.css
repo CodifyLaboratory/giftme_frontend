@@ -49,7 +49,7 @@
     width: 80px;
     height: 80px;
     left: 172px;
-    bottom: 89px;
+    bottom: 171px;
     opacity: 0;
 }
 
@@ -163,4 +163,10 @@ form {
 .date_error {
     color: red;
     font-size: 14px;
+}
+
+.no_wishes {
+    height: 80vh;
+    margin-left: 40%;
+    font-size: 50px;
 }

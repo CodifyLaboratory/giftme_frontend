@@ -24,7 +24,6 @@ function SignUp() {
     }
     dispatch(signUpFetch(user))
     reset()
-
   }
 
   const closeHandler = () => {
@@ -37,11 +36,10 @@ function SignUp() {
     if (signError) {
       setVisible(true)
     }
-
-    if(token){
+    if(token) {
       history.push("/AboutMe")
     }
-  }, [signError, token])
+  }, [token])
 
 
   return (

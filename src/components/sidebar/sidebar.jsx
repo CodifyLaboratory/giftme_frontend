@@ -24,7 +24,7 @@ const SideBar = () => {
 
                 <div className={css.wrapper}>
                     <img src={gifts} alt="gifts" />
-                    <NavLink to="" className={css.link}>Мои подарки</NavLink>
+                    <NavLink to="/" className={css.link}>Мои подарки</NavLink>
                 </div>
             </div>
 

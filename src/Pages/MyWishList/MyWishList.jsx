@@ -29,14 +29,18 @@ function MyWishList() {
     };
 
     const submitHandler = (data) => {
-        const formData = new FormData();
+        const formData = new FormData()
         formData.append('name', data.name)
         formData.append('description', data.description)
         formData.append('date', data.date)
         formData.append('link', data.link)
-        formData.append('image', data.image[0])
-        console.log(Array.from(formData))
-        // dispatch(setWishesFetch(formData))
+        if(data.image[0]) {
+            formData.append('image',data.image[0], data.image[0].name)
+            dispatch(setWishesFetch(formData))
+        } else {
+            dispatch(setWishesFetch(formData))
+        }
+        setOpen(false)
         reset()
     }
 
@@ -79,15 +83,6 @@ function MyWishList() {
                             <img src={Pencil} alt="Pencil" />
                             <div className={css.symbol}>40 символов</div>
                         </label>
-                        <label htmlFor="date" className={css.label}>
-                            <div>Дата</div>
-                            <input
-                                type="text"
-                                {...register("date",{pattern: /\d{4}-\d{2}-\d{2}/})}
-                            />
-                            {errors.date && <p className={css.date_error}>Пишите дату в формате гггг-мм-дд</p>}
-                            <img src={Pencil} alt="Pencil" />
-                        </label>
                         <label htmlFor="link" className={css.labelLink}>
                             <div>Ссылка</div>
                             <input
@@ -116,6 +111,11 @@ function MyWishList() {
                 </form>
             </Modal>
 
+
+
+
+
+
             {
                 wishes && wishes.map(item=>(
                     <MyWishContent
@@ -126,11 +126,14 @@ function MyWishList() {
                         description={item.description}
                         img={item.image}
                     />
-
                 ))
             }
 
-            <MyWishContent />
+            {
+                !wishes.length && <div className={css.no_wishes}>Желаний пока нет</div>
+            }
+
+
 
 
 

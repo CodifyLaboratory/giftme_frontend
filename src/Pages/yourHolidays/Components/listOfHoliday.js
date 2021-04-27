@@ -1,18 +1,17 @@
 
 import ColorPicker from './colorPicker'
 import css from '../assets/holiday.module.css'
-import AddModal from './addButonModal';
 import settings from '../../../Images/settings.svg'
 
 
 
-function ListOfHoliday({name, date}) {
+function ListOfHoliday({name, day, month}) {
   return (
 
 
       <div className={css.list_scene}>
         <div className={css.holiday_block}>
-          <h4 className={css.holiday_date}> 23 фераля </h4>
+          <h4 className={css.holiday_date}>{`${day} ${month}`} </h4>
           <h4 className={css.holiday_name}>{name}</h4>
           <div className={css.holiday_block_button}>
               <ColorPicker/>              

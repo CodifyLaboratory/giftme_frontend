@@ -23,7 +23,7 @@ const WishlistSidebar = () => {
 
                 <div className={css.wrapper}>
                     <img src={holidays} alt="holidays" />
-                    <NavLink to="/holidays" className={css.link}>Мои праздники</NavLink>
+                    <NavLink to="/holidayList" className={css.link}>Мои праздники</NavLink>
                 </div>
 
                 <div className={css.wrapper}>

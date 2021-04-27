@@ -17,6 +17,9 @@ const MyFriend = () => {
 
     return (
         <div className={css.wrapper}>
+            <div>
+
+            </div>
             <Sidebar />
             <div>
                 <div className={css.search}>
@@ -31,15 +34,19 @@ const MyFriend = () => {
                 <div className={css.Friends_info}>
 
                     {
-                        users && users.map(item=> {
+                        users && users.map(item => {
                                 if (item.id !== id) {
-                                    console.log(item.id + ',' + id)
+
                                     return <FriendsInfo key={item.id} first_name={item.first_name}
                                                         last_name={item.last_name}
                                                         description={item.description}/>
-                                }
+                                } else return null
                             }
                         )
+                    }
+
+                    {
+                        !users.length && <div className={css.no_friends}>Друзей пока нет</div>
                     }
 
 

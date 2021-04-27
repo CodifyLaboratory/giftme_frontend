@@ -52,6 +52,7 @@ export const getHolidaysFetch = () => async (dispatch) => {
 export const setHolidaysFetch = data => async dispatch => {
     try {
         await axios.post("/holidays/create", data)
+        dispatch(getHolidaysFetch())
     }catch (err) {
         if(err.response.status === 401) {
             dispatch(userLogout())
@@ -67,7 +68,9 @@ export const setWishesFetch = formData => async dispatch => {
                 "Content-Type": "multipart/form-data"
             }
         })
+        dispatch(getWishesFetch())
     } catch (err) {
+        console.log(err)
         if (err.response.status === 401) {
             dispatch(userLogout())
             dispatch(setWishesError(err.response.data))

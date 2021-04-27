@@ -27,8 +27,7 @@ const AddModal = () => {
 
 
     const submitHandler = (data) => {
-      // dispatch(setHolidaysFetch(data))
-      console.log(data)
+      dispatch(setHolidaysFetch(data))
       reset()
       setVisible(false)
     }
@@ -56,11 +55,11 @@ const AddModal = () => {
             <div className={css.modal_gift_date}>
               <h4 className={css.gift_label}>Дата</h4>
               <select
-                  defaultValue="0"
+                  defaultValue=""
                   {...register("day",{required: true})}
                   className={css.modal_date_input}
               >
-                <option value="0" selected disabled>день</option>
+                <option value="0"  disabled>день</option>
                 {days.map(i => (
                     <option key={i} value={i}>{i}</option>
                 ))}
@@ -71,18 +70,18 @@ const AddModal = () => {
                     defaultValue='0'
                 >
                   <option value="0" disabled>месяц</option>
-                  <option value="Январь">Январь</option>
-                  <option value="Февраль">Февраль</option>
-                  <option value="Март">Март</option>
-                  <option value="Апрель">Апрель</option>
-                  <option value="Май">Май</option>
-                  <option value="Июнь">Июнь</option>
-                  <option value="Июль">Июль</option>
-                  <option value="Август">Август</option>
-                  <option value="Сентярь">Сентябрь</option>
-                  <option value="Октябрь">Октябрь</option>
-                  <option value="Ньябрт">Ноябрь</option>
-                  <option value="Декабрь">Декабрь</option>
+                  <option value="Января">Январь</option>
+                  <option value="Февраля">Февраль</option>
+                  <option value="Марта">Март</option>
+                  <option value="Апреля">Апрель</option>
+                  <option value="Мая">Май</option>
+                  <option value="Июня">Июнь</option>
+                  <option value="Июля">Июль</option>
+                  <option value="Августа">Август</option>
+                  <option value="Сентяря">Сентябрь</option>
+                  <option value="Октября">Октябрь</option>
+                  <option value="Ньября">Ноябрь</option>
+                  <option value="Декабря">Декабрь</option>
                 </select>
             </div>
 

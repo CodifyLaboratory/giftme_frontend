@@ -69,6 +69,10 @@ function App() {
             <HolidayList/>
           </Route>
 
+          <Route exact path='/SignUp'>
+            <SignUp/>
+          </Route>
+
 
           <Redirect to="/" />
 

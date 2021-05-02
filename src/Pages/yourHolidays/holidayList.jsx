@@ -1,4 +1,4 @@
-import WishlistSidebar from '../../components/wishlistSidebar/wishlistSidebar'
+import WishlistSidebar from '../../Components/wishlistSidebar/wishlistSidebar'
 import ListOfHoliday from "./Components/listOfHoliday";
 import css from './assets/scene.module.css'
 

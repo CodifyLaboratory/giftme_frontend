@@ -1,6 +1,6 @@
 import React from 'react'
-import SecondCard from '../../components/cards/second/card2'
-import FirstCard from '../../components/cards/first/card1'
+import SecondCard from '../../Components/cards/second/card2'
+import FirstCard from '../../Components/cards/first/card1'
 import css from '../cartPage/cartPage.module.css'
 
 

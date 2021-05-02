@@ -1,4 +1,4 @@
-import Header from './components/Header/header'
+import Header from './Components/Header/header'
 import AboutMe from './Pages/AboutMe/AboutMe'
 import Personal from './Pages/PersonalArea/Personal'
 import './App.css'

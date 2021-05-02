@@ -9,6 +9,7 @@ import tree from '../../../img/tree.png'
 import screen from '../../../img/screen.png'
 import Css from './main.module.css'
 import MainHeader from './../MainHeader'
+import {Link} from 'react-router-dom'
 
 const MainPage = () => {
     return (
@@ -19,7 +20,7 @@ const MainPage = () => {
                     <h1>Gift me</h1>
                     <p>Gift.me – это сайт, где пользователи могут размещать свои желаемые подарки, даже указать ссылку на этот подарок.
 Возможность делиться вещами.</p>
-                    <button className={Css.content_button}>Создать WishList</button>
+                   <Link to = '/wishlist'><button className={Css.content_button}>Создать WishList</button></Link>
                 </div>
                 <div className={Css.photoContent}>
                     <img src={photo} alt="photo" />

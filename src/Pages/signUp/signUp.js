@@ -1,41 +1,107 @@
-import MainHeader from "../header/MainHeader";
+import { useEffect, useState } from "react";
+import Pathes from "../../Utils/Pathes";
+import requester from "../../Utils/Requester";
 import css from './signUp.module.css'
+import eye from '../../Images/eye.svg'
+import { RegHead } from "./components/regHead";
+import { CheckBox } from "./components/checkBox";
+import { AddNewUser } from "./components/addUser";
+import {resfreshUserList} from '../resfreshUsersList/resfreshUserList'
+import { NameInput } from "./components/nameInput";
 
-function SignUp() {
+function SignUp(props) {
+  const [nameValue, setNameValue] = useState()
+  const [passwordValue, setPasswordValue] = useState()
+  const [rePasswordValue, setRePasswordValue] = useState()
+  const [userList, setUserList] = useState([])
+
+  const resfreshUserList = async () => {
+    const {list} = await requester.get(Pathes.getUsers())
+    setUserList(list)
+  }
+
+  useEffect(() => {
+    resfreshUserList()
+  }, [])
+ 
+
+
+  const showPassword = () => {
+    var x = document.getElementById('passwordVal')
+    if(x.type === 'password') {
+      x.type = 'text';
+    } else {
+      x.type = 'password'
+    }
+  }
+
+  const showRePassword = () => {
+    var x = document.getElementById('rePasswordVal')
+    if(x.type === 'password') {
+      x.type = 'text';
+    } else {
+      x.type = 'password'
+    }
+  }
+
   return (
   <div>
     <div class={css.Scene}>
       <div class={css.page_container}>
 
         <div class={css.registration_form}>
-          <div class={css.title}>Регистрация</div>
-          <div class={css.title_description}>регистрация через 
-            <span class={css.inner_title_description}>Gmail</span>
-          </div>
+          <RegHead/>
+
           <div class={css.registration_body}>
-            <div class={css.input_field_email}>
-              <div class={css.require_mark_email}>*</div>
-              <input class={css.inner_input_email} placeholder="Email"/>              
-            </div>
+            <NameInput name={nameValue} setNameValue={setNameValue}/>
+            
+
             <div class={css.input_field_password}>
               <div class={css.require_mark_password}>*</div>
-              <input class={css.inner_input_password} placeholder="Пароль"/>
+              <p>
+                <input class={css.inner_input_password} 
+                      placeholder="Пароль"
+                      id='passwordVal'
+                      type='password'
+                      value={passwordValue}
+                      onChange={e => setPasswordValue(e.target.value)}
+                      /> 
+                <button type='button' 
+                        class={css.unmask} 
+                        onClick={showPassword}
+                        > 
+                        <img src={eye}/>
+                </button> 
+              </p>
               <div class={css.input_password_description}>Не менее 8 символов.</div>              
             </div>
+
             <div class={css.input_field_re_password}>
               <div class={css.require_mark_re_password}>*</div>
-              <input class={css.inner_input_re_password} placeholder="Подтвердить пароль"/>              
-            </div>
-            <input type="checkbox" id='confirmBox' class={css.check_field}/>
-            <label for="confirm" class={css.check_field_label}>я принимаю условия пользовательского соглашения</label>
 
-            <div class={css.button_block}>
-              <button class={css.save_button}>
-                <span class={css.save_button_label}>Сохранить</span>
-              </button>
-              <a href="#" class={css.login_link}>Есть аккаунт?</a>
+              <p>
+                <input class={css.inner_input_re_password} 
+                      placeholder="Подвердить пароль"
+                      id='rePasswordVal'
+                      type='password'
+                      value={rePasswordValue}
+                      onChange={e => setRePasswordValue(e.target.value)}
+                      /> 
+                <button type='button' 
+                        class={css.unmask} 
+                        onClick={showRePassword}
+                        > 
+                        <img src={eye}/>
+                </button> 
+              </p>            
             </div>
 
+            <CheckBox/>
+
+            <AddNewUser onAdd={resfreshUserList} 
+                        name={nameValue}
+                        password={passwordValue}
+                        />
           </div>
         </div>
 

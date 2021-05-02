@@ -169,6 +169,46 @@ input::placeholder {
 }
 
 
+form p { position: relative; }
+
+.inner_input_password + .unmask {
+  position: relative;
+  right: 5%;
+  top: 38px;
+  left: 550px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  cursor:pointer;
+  border: none;
+  font-size:14px;
+  line-height:24px;
+  -webkit-appearance:none;
+  outline:none
+}
+
+
+.inner_input_password + .unmask:before {
+  content: "\f06e";
+  position:absolute;
+  top:0; left:0;
+  width: 25px;
+  height: 25px;
+  background: rgba(205,205,205,0.2);
+  z-index:1;
+  color:#aaa;
+  border:2px solid;
+  border-radius: 50%;
+}
+
+.inner_input_password[type="text"] + .unmask:before {
+  content:"\f070";
+   background: rgba(105,205,255,0.2);
+   color:#06a
+ }
+
+
 
 
 /* PASSWORD DESCRIPTION */

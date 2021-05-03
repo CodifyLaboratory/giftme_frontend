@@ -1,4 +1,3 @@
-
 import css from './signUp.module.css'
 import { RegHead } from "./components/regHead";
 import { CheckBox } from "./components/checkBox";

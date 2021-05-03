@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5 h6 {
 
 input::placeholder {
   position: absolute;
-  width: 58px;
+  top: 15px;
+  width: 580px;
   height: 20px;
   size: 18px;
   padding-left: 20px;
@@ -190,6 +191,48 @@ input::placeholder {
   /* белый */
   background: #FBFBFB;
   border-radius: 20px;
+}
+
+form p { position: relative; }
+
+.inner_input_password + .unmask {
+  position: relative;
+  right: 5%;
+  top: 44px;
+  left: 550px;
+  width: 25px;
+  height: 25px;
+  background: none;
+  cursor:pointer;
+  border: none;
+  font-size:14px;
+  line-height:24px;
+  -webkit-appearance:none;
+  outline:none
+}
+
+
+.inner_input_password + .unmask:before {
+  position:absolute;
+  z-index:1;
+}
+ 
+.inner_input_re_password + .unmask {
+  position: relative;
+  right: 5%;
+  top: 73px;
+  left: 550px;
+  width: 25px;
+  height: 25px;
+  background: none;
+  cursor:pointer;
+  border: none;
+  font-size:14px;
+  line-height:24px;
+  -webkit-appearance:none;
+  outline:none;
+  z-index:1;
+
 }
 
 

@@ -1,0 +1,224 @@
+[33mcommit 9f3fc5fdc6f631caec6d07e70fce7f4401833d2f[m[33m ([m[1;36mHEAD -> [m[1;32muser[m[33m, [m[1;31morigin/user[m[33m)[m
+Merge: 0e27be1 53e0fe8
+Author: Mdrkuz <kuzebaevtv@gmail.com>
+Date:   Sun May 2 14:58:15 2021 +0600
+
+    check commit
+
+[33mcommit 53e0fe891a1239263c344b075e561c235018fabd[m[33m ([m[1;31morigin/Kamila[m[33m)[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Tue Apr 13 18:16:28 2021 +0300
+
+    Last commit
+
+[33mcommit 0e27be12cd0365c2ef58743fb7f3b82b0a46ae18[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: ede919d cc07458
+Author: Mdrkuz <78030561+Mdrkuz@users.noreply.github.com>
+Date:   Tue Apr 13 18:21:49 2021 +0600
+
+    Merge pull request #6 from CodifyLaboratory/user
+    
+    added user
+
+[33mcommit cc0745864fd6075e291561748a7e0cc7f56177ce[m
+Author: Mdrkuz <kuzebaevtv@gmail.com>
+Date:   Tue Apr 13 18:07:09 2021 +0600
+
+    added user
+
+[33mcommit ede919d2ac6dc5e4e20ed6d1808bec065f40db1e[m[33m ([m[1;32mmain[m[33m)[m
+Merge: afadf52 99c4a9d
+Author: Alymov-3922 <78487580+Alymov-3922@users.noreply.github.com>
+Date:   Tue Mar 30 20:18:00 2021 +0600
+
+    Merge pull request #5 from CodifyLaboratory/MyWishList
+    
+    My wish list
+
+[33mcommit 99c4a9d058aa8df561e31c4165f702c62bd3fbc0[m[33m ([m[1;31morigin/MyWishList[m[33m)[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Tue Mar 30 20:14:12 2021 +0600
+
+    MyWishList_Modal
+
+[33mcommit 86a91d267bbd18e268efd50b13357ae23a9eac00[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Fri Mar 26 19:00:47 2021 +0300
+
+    fix
+
+[33mcommit 7af80b4c9edb38c0064266943eb03bcc6686855f[m
+Merge: 6be235d 6bc365c
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Fri Mar 26 16:54:02 2021 +0300
+
+    Merge branch 'main' of https://github.com/CodifyLaboratory/giftme_frontend into Kamila
+
+[33mcommit ee9bbab98af2ea89950a4b8f77225a80aff145de[m
+Merge: 1185fa2 afadf52
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Fri Mar 26 19:34:52 2021 +0600
+
+    MyWishList
+
+[33mcommit 1185fa21b4b3dd2012620ce907f2140f913ef692[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Fri Mar 26 19:04:19 2021 +0600
+
+    MyWishList_Start
+
+[33mcommit afadf52c0d7ee4fc7d8831847ab4836158dd91f8[m
+Merge: 6bc365c 86a91d2
+Author: kamilabakytbekova <75374785+kamilabakytbekova@users.noreply.github.com>
+Date:   Fri Mar 26 16:01:51 2021 +0300
+
+    Merge pull request #4 from CodifyLaboratory/Kamila
+    
+    Kamila
+
+[33mcommit 6be235d0eec23372ea4c4d0d85460f073da51295[m
+Merge: a6bd72b 9dc26de
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Wed Mar 24 19:16:35 2021 +0300
+
+    Merge branch 'main' of https://github.com/CodifyLaboratory/giftme_frontend into Kamila
+
+[33mcommit 6bc365c26481f903b3a6f46c49f75133c94d8732[m
+Merge: c2b55bb 8c9bff5
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Wed Mar 24 21:00:38 2021 +0600
+
+    Merge branch 'main' of https://github.com/CodifyLaboratory/giftme_frontend into main
+
+[33mcommit 8c9bff578e21b7abe01e9ae3c658ee65e79cbf7a[m
+Merge: f939ed8 44071df
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Wed Mar 24 20:29:09 2021 +0300
+
+    Merge branch 'main' of https://github.com/CodifyLaboratory/giftme_frontend
+
+[33mcommit f939ed89fefa628d79ba3a7d62e78e457d6f5123[m
+Merge: c430204 9dc26de
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Wed Mar 24 19:08:39 2021 +0300
+
+    Merge branch 'main' of https://github.com/CodifyLaboratory/giftme_frontend
+
+[33mcommit c2b55bb842fdf1b15c5d3e4f19ba2b473b6c802e[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Wed Mar 24 20:59:24 2021 +0600
+
+    fix bugs
+
+[33mcommit bba5bd0f724fd477a26b495176262260360bcb4f[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Wed Mar 24 20:50:17 2021 +0600
+
+    ModulesCss
+
+[33mcommit e94fc05e19284a9638f7f3f5b945a26a3716a500[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Wed Mar 24 20:44:42 2021 +0600
+
+    CssModules2
+
+[33mcommit 44071df15b2cf276ff128e446915556651f05f54[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Wed Mar 24 20:12:31 2021 +0600
+
+    CssModules
+
+[33mcommit 9dc26de9309fbfa5b29e315f9bdd5bba2205099d[m
+Merge: bd0f4c4 4faf36f
+Author: Alymov-3922 <78487580+Alymov-3922@users.noreply.github.com>
+Date:   Tue Mar 23 21:08:40 2021 +0600
+
+    Merge pull request #3 from CodifyLaboratory/ErrorPage
+    
+    ErrorPage
+
+[33mcommit 4faf36fef9462d40a8a89c1edbbb1e03e4c96232[m[33m ([m[1;31morigin/ErrorPage[m[33m)[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Tue Mar 23 21:05:51 2021 +0600
+
+    ErrorPage
+
+[33mcommit bd0f4c473a3789e83a5a112ac875c221d524c5fe[m
+Merge: 5c2ca01 495df34
+Author: Alymov-3922 <78487580+Alymov-3922@users.noreply.github.com>
+Date:   Tue Mar 23 18:59:34 2021 +0600
+
+    Merge pull request #2 from CodifyLaboratory/PersonalLayOut
+    
+    Personal lay out
+
+[33mcommit 495df34b008e7c404b2e2b44580506220a398f59[m[33m ([m[1;31morigin/PersonalLayOut[m[33m)[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Tue Mar 23 18:49:57 2021 +0600
+
+    PersonalPage
+
+[33mcommit a6bd72bec4982ba6b580e554a89667834f615db8[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Mon Mar 22 19:06:54 2021 +0300
+
+    BR2
+
+[33mcommit c430204f86c0006edcbc7e1a9e72763aae6fe451[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Mon Mar 22 19:05:23 2021 +0300
+
+    BR
+
+[33mcommit 35172b07733b32126028b3bf5b927bd2d47b09c8[m
+Merge: 9e5c95d 9ad17af
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Mon Mar 22 18:24:02 2021 +0300
+
+    all changes
+
+[33mcommit 9ad17afa9fa0b0af84500ccd6058729651e08351[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Mon Mar 22 18:09:39 2021 +0300
+
+    changes
+
+[33mcommit 5c2ca019971dfc1918c02184ad5aa326cdc3330d[m
+Merge: 35172b0 5699c92
+Author: Alymov-3922 <78487580+Alymov-3922@users.noreply.github.com>
+Date:   Mon Mar 22 19:36:58 2021 +0600
+
+    Merge pull request #1 from CodifyLaboratory/Adilet
+    
+    Adilet
+
+[33mcommit 5699c9282fdfc219e371dcfa9a2146f586e6aa71[m[33m ([m[1;31morigin/Adilet[m[33m)[m
+Merge: ed21b6c 35172b0
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Mon Mar 22 19:35:02 2021 +0600
+
+    GiftMe mergeBranch Adilet=>Kamila
+
+[33mcommit ed21b6cc570207ce9e01591b4c5494806bd67d2b[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Mon Mar 22 18:54:09 2021 +0600
+
+    AboutMe
+
+[33mcommit b6873ecc13c579af17c617a4585c80b92cea424e[m
+Author: Kamila <bakytbekovakamila@gmail.com>
+Date:   Tue Feb 23 17:35:20 2021 +0300
+
+    Initialize project using Create React App
+
+[33mcommit fb0c91e75dbcfdcc0d6c1b07af86dcc5c7e6a30e[m
+Author: Katalyzator <web.coder96@gmail.com>
+Date:   Fri Feb 19 19:05:57 2021 +0600
+
+    Initialize project using Create React App
+
+[33mcommit 9e5c95d0456c67412e64ab4e97c008036d35e9ce[m
+Author: CodifyLaboratory <77993907+CodifyLaboratory@users.noreply.github.com>
+Date:   Tue Jan 26 19:37:38 2021 +0600
+
+    Initial commit

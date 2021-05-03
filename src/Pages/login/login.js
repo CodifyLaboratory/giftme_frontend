@@ -2,6 +2,13 @@ import css from './login.module.css'
 import axios from 'axios'
 import { useState } from 'react';
 import { useHistory } from 'react-router';
+<<<<<<< HEAD
+=======
+import { LogHead } from './components/logHead';
+import { EmailBlock } from './components/emailBlock';
+import { PasswordBlock } from './components/passwordBlock';
+import { ButtonBlock } from './components/buttonBlock';
+>>>>>>> user
 
 
 function Login() {
@@ -22,6 +29,7 @@ function Login() {
       })
   }
 
+<<<<<<< HEAD
 
   return (
     <div>
@@ -53,6 +61,28 @@ function Login() {
                 <div class={css.button_block_description}>У вас еще нет аккаунта?</div>
                 <a href="#" class={css.registration_link}>Зарегистрироваться</a>
               </div>
+=======
+  return (
+    <div>
+
+      <div class={css.Scene}>
+        <div class={css.page_container}>
+
+          <div class={css.login_form}>
+
+            <LogHead/>
+
+            <div class={css.login_body}>
+
+              <EmailBlock email={email} setEmail={setEmail}/>
+
+              <PasswordBlock password={password} setPassword={setPassword}/>
+
+              <div class={css.forgot_password}>Забыли пароль?</div>
+
+              <ButtonBlock submit={submit}/>
+
+>>>>>>> user
             </div>
 
           </div>

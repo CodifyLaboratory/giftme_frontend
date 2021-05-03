@@ -1,19 +1,18 @@
 import React from 'react';
 import Css from './../header/MainHeader.module.css'
 import Logo from '../../img/logo.png'
+import {Link} from 'react-router-dom'
 
 function MainHeader() {
     return (
         
             <div className={Css.header}>
                 <div className={Css.logo}>
-                    <img src={Logo} alt="GiftMe" />
+                 <Link to = '/'> <img src={Logo} alt="GiftMe" /> </Link>  
                 </div>
                 <div className={Css.menu}>
-                    <nav className={Css.nav1}>О нас</nav>
-                    <nav>Миссия сайта</nav>
-                    <button className={Css.nav2}>Регистрация</button>
-                    <nav>Войти</nav>
+                    <Link  to = '/signUp' className={Css.sign}>Регистрация</Link>
+                    <Link  to = '/login' className={Css.login}>Войти</Link>
                 </div>
 
             </div>

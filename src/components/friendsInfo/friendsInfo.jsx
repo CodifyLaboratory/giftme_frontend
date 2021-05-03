@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import css from './friendsInfo.module.css'
 import photo from './../../img/image.png'
 import Modal from 'react-awesome-modal'
-import { Link } from 'react-router-dom'
 
 
-const FriendsInfo = () => {
+
+const FriendsInfo = (props) => {
 
     const [visible, setVisible] = useState(false)
 
@@ -18,6 +18,28 @@ const FriendsInfo = () => {
         setVisible(false)
 
     };
+
+    const addFriend = () => {
+        fetch (`http://167.99.46.0//auth/users/${props.user.id}/`)
+                .then((res)=> res.json())
+        .then((data) => {
+           alert ('доработаю')
+        })
+    }
+
+    const deleteFriend = () => {
+        fetch (`http://167.99.46.0//auth/users/${props.user.id}/`,{
+            method: 'DELETE'
+        })
+                .then((res)=> res.json())
+        .then((data) => {
+           alert ('доработаю')
+           
+
+        })
+    }
+
+    
 
     return (
 
@@ -32,7 +54,8 @@ const FriendsInfo = () => {
             <img src={photo} alt="" />
 
             <p>Курманалиева Айгерим</p>
-            <input type="text" placeholder="Описание о себе" />
+            
+            <input type="text"/>
 
             <Modal 
                 style={{color: 'red'}}
@@ -43,8 +66,8 @@ const FriendsInfo = () => {
                 onClickAway={() => closeMod()}
             >
                 <div className={css.modal}>
-                    <Link>Удалить друга</Link>
-                    <Link className={css.submit}>Добавить друга</Link>
+                    <div onClick = {deleteFriend}>Удалить друга</div>
+                    <div  onClick = {addFriend} className={css.submit}>Добавить друга</div>
                 </div>
 
 
@@ -56,8 +79,6 @@ const FriendsInfo = () => {
 
     )
 }
-
-    
 
 
 export default FriendsInfo

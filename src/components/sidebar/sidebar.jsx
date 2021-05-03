@@ -14,12 +14,12 @@ const SideBar = () => {
 
                 <div className={css.wrapper}>
                     <img src={friends} alt="friends" />
-                    <Link className={css.link}>Мои друзья</Link>
+                    <Link to = '/myFriend' className={css.link}>Мои друзья</Link>
                 </div>
 
                 <div className={css.wrapper}>
                     <img src={holidays} alt="holidays" />
-                    <Link className={css.link}>Мои праздники</Link>
+                    <Link to ='/holidayList'className={css.link}>Мои праздники</Link>
                 </div>
 
                 <div className={css.wrapper}>

@@ -14,21 +14,15 @@
  }
 
  .wish {
-    margin:7px 0 10px 0;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
 }
 
-.wish>h3 {
-    margin-bottom: 5px;
-}
-.wish>p {
-    margin-bottom: 6px;
-}
+
 .wish>a {
-    margin-bottom: 9px;
+    color: #1DB3C3;
 }
 .pencil {
     margin-right:none;

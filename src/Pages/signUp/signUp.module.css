@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5 h6 {
 
 input::placeholder {
   position: absolute;
-  width: 58px;
+  top: 15px;
+  width: 580px;
   height: 20px;
   size: 18px;
   padding-left: 20px;

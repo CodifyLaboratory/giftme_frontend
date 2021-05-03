@@ -71,7 +71,6 @@ function MyWishList() {
                             <button>Сохранить</button>
                             <button>Изменить</button>
                         </div>
-
                     </div>
                 </div>
             </Modal>

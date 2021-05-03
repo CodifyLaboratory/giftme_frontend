@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5 h6 {
 
 input::placeholder {
   position: absolute;
-  width: 58px;
+  width: 580px;
+  top: 16px;
   height: 20px;
   size: 18px;
   padding-left: 20px;
@@ -174,7 +175,7 @@ form p { position: relative; }
 .inner_input_password + .unmask {
   position: relative;
   right: 5%;
-  top: 38px;
+  top: 44px;
   left: 550px;
   width: 25px;
   height: 25px;
@@ -190,25 +191,9 @@ form p { position: relative; }
 
 
 .inner_input_password + .unmask:before {
-  content: "\f06e";
   position:absolute;
-  top:0; left:0;
-  width: 25px;
-  height: 25px;
-  background: rgba(205,205,205,0.2);
   z-index:1;
-  color:#aaa;
-  border:2px solid;
-  border-radius: 50%;
 }
-
-.inner_input_password[type="text"] + .unmask:before {
-  content:"\f070";
-   background: rgba(105,205,255,0.2);
-   color:#06a
- }
-
-
 
 
 /* PASSWORD DESCRIPTION */
